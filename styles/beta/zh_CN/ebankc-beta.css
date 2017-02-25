@@ -1,0 +1,410 @@
+
+/*公共部分*/
+/*欢迎部分*/
+.ebankc-welcome {
+	background-color:#EAEAEA;
+	line-height:30px;
+}
+.ebankc-w{
+    /*版心*/
+    width: 98%;
+    height:100%;
+    margin: 0 auto;
+}
+.ebankc-welcome p {
+	float:left;
+}
+.ebankc-welcome ul {
+	float:right;
+}
+.ebankc-welcome ul li {
+	float:left;
+	margin-left:20px; 
+	line-height: 30px;
+}
+.ebankc-welcome a {
+	display: inline-block;
+    *display: inline;
+	*zoom: 1;
+	height:30px;
+}
+.ebankc-welcome a img {
+	margin-right:5px;
+	vertical-align:top;
+}
+.ebankc-welcome a span {
+	display: inline-block;
+    *display: inline;
+	*zoom: 1;
+	height:30px;
+	line-height:30px;
+}
+
+.ebankc-welcome .ebankc-hot-line {
+	float:right;
+	margin-left:35px;
+}
+
+/*logo-search部分*/
+.ebankc-logo-search {
+	width: 100%;
+	background-color: #ffffff;
+	height: 80px;
+	/*line-height: 80px;*/
+}
+.ebankc-logo-search .ebankc-logo {
+	float:left;
+	height:80px;
+}
+.ebankc-logo-search .ebankc-logo a {
+	display: inline-block;
+    *display: inline;
+	*zoom: 1;
+	height:80px;
+}
+.ebankc-logo-search .ebankc-logo img {
+	vertical-align:middle;
+	margin-top:15px;
+}
+
+.ebankc-logo-search .ebankc-search { 
+	float:right;
+	width: 240px;
+	margin-top: 27px;
+}
+.ebankc-logo-search .ebankc-search input {
+	float:left;
+	width:198px;
+	height:28px;
+	border:1px solid #D6D6D6;
+	border-right: none;
+	border-radius: 2px 0 0 2px;
+	padding-left:10px;
+	background-color:#F6F6F6;
+	color:#B5B5B5;  
+}
+.ebankc-logo-search .ebankc-search a {
+	float:right;
+	display: block;
+	width: 30px;
+	height:30px;
+	background:url(./img/search.png) center center no-repeat;
+}
+.ebankc-logo-search .ebankc-exit {
+	float:right;
+	padding-right:30px;
+	margin-top:35px;
+}
+.ebankc-logo-search .ebankc-exit a {
+	display: inline-block;
+    *display: inline;
+	*zoom: 1;
+}
+.ebankc-logo-search .ebankc-exit a img {
+	margin-right:5px;
+	vertical-align:top;
+}
+/*导航部分*/
+.ebankc-nav {
+	background-color: #E50112;
+	font-size: 16px;
+	position: relative;
+	padding:8px 0;
+	height:auto;
+    min-width: 800px;
+    margin: 0;
+}
+.ebankc-nav .ebankc-more {
+	width: 50px;
+	height:74px;
+	background: url(./img/70more.png) center center no-repeat;
+	position: absolute;
+	top:-2px;
+	right:3%;
+}
+.ebankc-nav .ebankc-add {
+	position: absolute;
+	bottom:8px;
+	right:4%;
+	width: 26px;
+	height:26px;
+	background: url(./img/addbtn.png) center center no-repeat;
+	z-index: 100;
+	display:none; 
+}
+.ebankc-nav .ebankc-more-sheet {
+	width:100%;
+	min-width: 800px;
+	font-size: 16px;
+	background-color: #ffffff;
+	/*background-color: rgba(255,255,255,0.9);*/
+	opacity:0.9; 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90); 
+	position:absolute;
+	top:70px;
+	z-index: 100;
+	display:none;
+}
+.ebankc-nav .ebankc-more-sheet .ebankc-more-sheettitle{
+	height:60px;
+	background-color:#f0f0f0;
+	position:relative;
+}
+.ebankc-nav .ebankc-more-sheet .ebankc-more-sheettitle p {
+	display: inline-block;
+    *display: inline;
+	*zoom: 1;
+	font-size:20px;
+	line-height:60px;
+	vertical-align:middle;
+	padding-left:15%;
+}
+.ebankc-nav .ebankc-more-sheet .ebankc-more-sheettitle a.cancel {
+	float:right;
+	position:absolute;
+	font-size:16px;
+	color:blue;
+	vertical-align:middle;
+}
+.ebankc-nav .ebankc-more-sheet .ebankc-more-sheettitle a.confirm {
+	float:right;
+	font-size:18px;
+	color:red;
+	vertical-align:middle;
+}
+.ebankc-nav .ebankc-more-sheet ul.ebankc-mor-ul {
+	width:85%;
+	margin-left:15%;
+	padding-top:25px;
+}
+.ebankc-nav .ebankc-more-sheet ul.ebankc-mor-ul li {
+	width: 15%;
+    height: 40px;
+    margin-right: 4%;
+	float:left;
+	color: #aeaeae;
+    list-style-type: square;
+}
+.ebankc-nav .ebankc-more-sheet ul.ebankc-mor-ul li a {
+	color: #000000;
+}
+.ebankc-nav .ebankc-more-sheet ul.ebankc-mor-ul i:hover {
+	cursor: pointer;
+}
+.ebankc-nav .ebankc-more-sheet ul.ebankc-mor-ul i {
+	display: inline-block;
+	*display:inline;
+	*zoom:1;
+	margin-left:10px;
+	/*box-sizing:border-box;*/
+	width: 13px;
+	height: 13px;
+	border: 1px solid #aeaeae;
+	border-radius: 50%;
+	/*position: relative;
+	top:1px;
+	left:10px;*/
+	background:none;
+
+}
+.ebankc-nav .ebankc-more-sheet ul.ebankc-mor-ul li.checked {
+	color: #e50012;
+}
+.ebankc-nav .ebankc-more-sheet ul.ebankc-mor-ul li.checked a {
+	color: #e50012;
+}
+.ebankc-nav .ebankc-more-sheet ul.ebankc-mor-ul li.checked i {
+	background: url(./img/check-1.png) center center no-repeat;
+	background-size: 12px 12px;
+	border-color:#e50012; 
+}
+/*.ebankc-nav .ebankc-more-sheet ul.ebankc-mor-ul .ebankc-sed-sheet {
+	width: 75%;
+	float: left;
+	background-color:#eeeeee;
+	padding:25px 50px; 
+	margin-bottom: 25px;
+	color:#5e5e5e;
+	font-size: 14px;
+}
+
+.ebankc-nav .ebankc-more-sheet ul.ebankc-mor-ul .ebankc-sed-sheet a {
+	display: inline-block;
+	*display:inline;
+	*zoom:1;
+	height: 20px;
+	line-height: 20px;
+	float:left;
+	margin-right: 10%;
+	color:#5e5e5e;
+}
+.ebankc-nav .ebankc-more-sheet ul.ebankc-mor-ul .ebankc-sed-sheet li {
+	width: 20%;
+	height:20px;
+	list-style-type: none;
+	padding-left:22px;
+	position: relative;
+}
+.ebankc-nav .ebankc-more-sheet ul.ebankc-mor-ul .ebankc-sed-sheet i {
+	position: absolute;
+	left:0;
+	top:4px;
+}*/
+.ebankc-nav .ebankc-nav-uldiv {
+	height:54px;
+	overflow:hidden;
+}
+.ebankc-nav .ebankc-navulshow {
+	height:auto;
+	overflow:visible;
+}
+.ebankc-nav ul.ebankc-nav-ul li {
+	float:left;
+	width:15.5028%;
+	height:27px;
+	text-align: center;
+	line-height: 27px;
+	position: relative;
+	border-right:1px solid #EF6672;	
+}
+
+.ebankc-nav ul.ebankc-nav-ul li a {
+	display: inline-block;
+	*display:inline;
+	*zoom:1;
+	width:101%;
+	height:101%;
+	color: #ffffff;
+}
+
+
+/*footer部分开始*/
+.ebankc-footer{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+}
+.ebankc-footer a{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    color: #ffffff !important;
+}
+.ebankc-footer .ebankc-f-left{
+    float: left;
+    width: 370px;
+    height: 24px;
+    padding-top: 26px;
+}
+.ebankc-footer .ebankc-f-left a{
+    font-size: 14px;
+    padding : 0 12px; 
+}
+.ebankc-footer .ebankc-f-left .ebankc-fl-br{
+    border-right: 1px solid #fff;
+}
+.ebankc-footer .ebankc-f-left .ebankc-fl-btm{
+    float: left;
+    font-size: 12px;
+    margin-top: 14px;
+    padding: 0;
+    padding-left: 12px;
+}
+.ebankc-footer .ebankc-f-left .ebankc-fl-btmw{
+    width: 132px;
+}
+.ebankc-footer .ebankc-f-center{
+    float: left;
+    padding-top: 26px;
+    width: 160px;
+}
+.ebankc-footer .ebankc-f-center a{
+    background: url("./img/phone.gif") no-repeat;
+    padding-left: 25px;
+}
+.ebankc-footer .ebankc-f-right{
+    width: 100px;
+    height: 42px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 30px;
+}
+
+/*主内容区*/
+.ebankc-context {
+	width:100%;
+	padding:10px 0 20px 0;
+}
+/*左侧主内容区*/
+.ebankc-context .ebankc-context-left {
+	width:18%;
+	float:left;
+	background-color: #fff;
+}
+.ebankc-context .ebankc-context-left .ebankc-nav2box {
+	border: 1px solid #c8c8c8;
+    font-size: 16px;
+    color: #333333;
+    margin: 0;
+}
+.ebankc-context .ebankc-context-left .ebankc-nav2box .ebankc-level2 {
+	border-bottom: 1px solid #c8c8c8;
+}
+.ebankc-context .ebankc-context-left .ebankc-nav2box .ebankc-level2 a {
+	display: inline-block;
+    *display: inline;
+	*zoom: 1;
+	width:80%;
+    margin: 0 0 0 30px;
+    height:51px;
+    line-height:51px;
+    font-size: 16px;
+}
+.ebankc-context .ebankc-context-left .ebankc-nav2box .ebankc-nav3 {
+	background-color:#f5f5f5;
+	display:none;
+}
+.ebankc-context .ebankc-context-left .ebankc-nav2box .active {
+	background-color:#E6313A;
+	color:#ffffff;
+}
+.ebankc-context .ebankc-context-left .ebankc-nav2box .active a {
+	color:#ffffff;
+}
+.ebankc-context .ebankc-context-left .ebankc-nav2box .ebankc-level3 a {
+	display: inline-block;
+    *display: inline;
+	*zoom: 1;
+	width:80%;
+	height:39px;
+	line-height:39px;
+    margin: 0 0 0 30px;
+    font-size: 14px;
+}
+.ebankc-context .ebankc-context-left .ebankc-nav2box .ebankc-nav4 {
+	background-color:#f9f9f9;
+	display:none;
+}
+.ebankc-context .ebankc-context-left .ebankc-nav2box .ebankc-level4 a {
+	display: inline-block;
+    *display: inline;
+	*zoom: 1;
+	width:80%;
+	height:39px;
+	line-height:39px;
+    margin: 0 0 0 45px;
+    font-size: 14px;
+}
+/*右侧主内容区*/
+.ebankc-context .ebankc-context-right {
+	width:80%;
+	float:left;
+	margin-left: 10px;
+}
+.ebankc-context .ebankc-context-right .iframearea {
+	width:100%;
+	height:auto;
+	/*height:2000px;*/
+	/*overflow-y:auto;*/
+}

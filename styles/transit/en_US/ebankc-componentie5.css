@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/*一行一个文本框*/
+.ebankc-inputtext {
+	width:360px;
+	height:32px;
+}
+/*一行多个文本框*/
+.ebankc-midtext {
+	width: 240px;
+}
+.ebankc-smalltext {
+	width: 110px;
+}
+
+
+/*日期时间组件*/
+
+/*日期选择*/
+.ebankc-timecomponent input.laydate-icon {
+	width:130px;
+	height:32px;
+}
+/*弹出框  带下载的日期*/
+
+.ebankc-timecomponent-download input.laydate-icon {
+	width:129px;
+	height:36px;
+}
+
+/*带选项的按钮*/
+
+
+.ebankc-selectbtn .ebankc-leftselect input {
+	width:137px;
+	height:30px;
+}
+
+/*表格中带选项的按钮 */
+
+.ebankc-tabelselectbtn .ebankc-select1-box .ebankc-select1 dt {
+	width:114px;
+	height:25px;
+}
+a.ebankc-tabeldownsend {
+	position: relative;
+	top:2px;
+}
+/*下拉框*/
+
+.ebankc-selectdrop .ebankc-inputselect{
+	width:360px;
+	height:32px;
+}
+
+/*一行多个下拉框*/
+.ebankc-selectdrop .ebankc-inputselectmore {
+	width:240px;
+	/*width:0;*/
+}
+/*省市下拉框*/
+.ebankc-selectdrop .ebankc-provincescitys {
+	width:175px;
+}
+
+/*小时分钟下拉框*/
+.ebankc-selectdrop .ebankc-time {
+	width:60px;
+	/*width:50px\9;
+	padding:0 0 0 10px\9;*/
+}
+
+
+/*带下拉框按钮后的‘发送’*/
+a.ebankc-tabeldownsend {
+	position:relative;
+	top:-8px;
+}
+/*tbody滚动条*/
+.ebankc-table .ebankc-table-content-y {
+    width:100%;
+}
+
+/*table可编辑输入框*/
+.ebankc-table textarea {
+	width:170px;
+    height: 28px;
+}
+.ebankc-table textarea.textareasmall {
+	width:96px;
+    height: 28px;
+}
+
+/*按钮行-一个按钮左对齐*/
+
+.ebankc-mcp-onebtn label {
+	float:none;
+}
+.ebankc-mcp-onebtn .ebankc-commonbtn{
+	float:none;
+}
+.ebankc-mcp-onebtn .ebankc-weakbtn{
+	float:none;
+}
+
+.ebankc-table-divyscrolltop {
+    padding-right:0;
+}

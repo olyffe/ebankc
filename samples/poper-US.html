@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-base.css">
+    <link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-component.css">
+    <link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-main.css">
+    <link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-table.css">
+    <link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-pop-base.css">
+    <link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-pop-table.css">
+    <link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-pop-down.css">
+    <link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-pop-tab.css">
+    <link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-pop-shadow.css">
+    <style>
+    .ebankc-main .ebankc-main-content>.ebankc-mc-part {
+        height: 500px;
+    }
+    
+    .for-shadow {
+        width: 200px;
+        height: 50px;
+        background-color: #fff;
+        font-size: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="ebankc-main">
+        <div class="ebankc-main-content">
+            <div class="ebankc-mc-part ebankc-index2">
+                <!--表单弹框类-->
+                <div class="ebankc-pop-table ebankc-table">
+                    <div class="ebankc-close1"></div>
+                    <div class="ept-title">
+                        <span>收款人名册</span>
+                        <input type="text" placeholder="快照名称关键字或收款账号">
+                        <button type="button" class="ebankc-commonbtn ebankc-width80btn">搜索</button>
+                        <button type="button" class="ebankc-weakbtn ebankc-width80btn">重置</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <th>收款单位</th>
+                            <th>收款账号</th>
+                            <th>开户行</th>
+                            <th>地区</th>
+                            <th>账户别名</th>
+                            <th>操作</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>中国电信股份有限公司</td>
+                                <td>1340685624515151559</td>
+                                <td>中国工商银行</td>
+                                <td>北京</td>
+                                <td>4526654452652215455</td>
+                                <td><a href="javascript:;">汇款</a></td>
+                            </tr>
+                            <tr>
+                                <td>中国电信股份有限公司</td>
+                                <td>1340685151215126259</td>
+                                <td>中国工商银行</td>
+                                <td>北京</td>
+                                <td>4526654452652215455</td>
+                                <td><a href="javascript:;">汇款</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="ebankc-page-box" id="page3">
+                        <div class="ebankc-page clearfix">
+                            <div class="ebankc-page-ext">
+                            <span>本页2笔，已选1笔</span>
+                            <div class="ebankc-tipbubbles">
+                                <a href="javascript:;" class="ebankc-bombBox">限额提示</a>
+                                <div class="ebankc-remindbubbles" id="remindBubbles" style="display:none">啦啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啦啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊<span></span><a href="javascript:;" class="ebankc-bombBox ">刷新</a></div>
+                            </div>
+                        </div>
+                            <a class="ebankc-weakbtn" href="javascript:;">下一页</a>
+                            <a class="ebankc-weakbtn" href="javascript:;">上一页</a> 
+                        </div>
+                    </div>
+                    <div class="ebankc-mcp-btns">
+                        <button class="ebankc-weakbtn">取消</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ebankc-mc-part ebankc-index1">
+                <!--无标题表单弹窗类-->
+                <div class="ebankc-pop-table ebankc-table ebankc-table-notitle">
+                    <div class="ebankc-close2"></div>
+                    <table>
+                        <thead>
+                            <th>对方行名/行号</th>
+                            <th>业务种类</th>
+                            <th>用途</th>
+                            <th>附言</th>
+                            <th>交易时间
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr class="ebankc-nobtn">
+                                <td>通州新华分理处</td>
+                                <td>通州新华分理处</td>
+                                <td>还得好好打卡</td>
+                                <td>回电话</td>
+                                <td>2016-07-31</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="ebankc-mc-part">
+                <!--下载弹窗类-->
+                <div class="ebankc-pop-down">
+                    <div class="ebankc-close1"></div>
+                    <div class="epd-item">
+                        <span>下载明细</span>
+                        <p>
+                            <a class="ebankc-weakbtn" id="epd-item-xls" href="javascript:;">EXECL(.xls)</a>
+                            <a href="javascript:;" class="ebankc-weakbtn">EXECL(.csv)</a>
+                            <a href="javascript:;" class="ebankc-weakbtn">文本(.dlt)</a>
+                            <i>自定义下载格式</i>
+                            <i>今日明细</i>
+                            <u></u>
+                        </p>
+                    </div>
+                    <div class="ebankc-item-content" id="content-xls">
+                        <p>已选字段：</p>
+                        <ul class="con-min clearfix">
+                            <li><i></i><a href="javascript:;">附言</a></li>
+                            <li><i></i><a href="javascript:;">借方发生额</a></li>
+                            <li><i></i><a href="javascript:;">贷方发生额</a></li>
+                        </ul>
+                        <p>未选字段：</p>
+                        <ul class="con-add clearfix">
+                            <li><i></i><a href="javascript:;">凭证号</a></li>
+                            <li><i></i><a href="javascript:;">本方账号</a></li>
+                            <li><i></i><a href="javascript:;">对方账号</a></li>
+                            <li><i></i><a href="javascript:;">交易时间</a></li>
+                            <li><i></i><a href="javascript:;">借/贷</a></li>
+                            <li><i></i><a href="javascript:;">金额</a></li>
+                            <li><i></i><a href="javascript:;">对方账号</a></li>
+                            <li><i></i><a href="javascript:;">摘要</a></li>
+                            <li><i></i><a href="javascript:;">用途</a></li>
+                            <li><i></i><a href="javascript:;">个性化信息</a></li>
+                            <li><i></i><a href="javascript:;">余额</a></li>
+                            <li><i></i><a href="javascript:;">对方单位名称</a></li>
+                        </ul>
+                        <div class="wxtip clearfix">
+                            <p class="wxtip-left">温馨提示：</p>
+                            <p class="wxtip-right">下载历史明细和下载今日明细已合并，如需修改，可在下表中带“-”号字段明细已合并，如需修改，可在下表中带“-”号字段来编明细已合并，如需修改，可在下表中带“-”号字段来编来编辑</p>
+                        </div>
+                        
+                        <div class="ebankc-mcp-btns">
+                            <button class="ebankc-commonbtn">确定</button>
+                            <button class="ebankc-weakbtn">取消</button>
+                        </div>
+                    </div>
+                    <div class="epd-item">
+                        <span>下载回单信息</span>
+                        <p>
+                            <a href="javascript:;" class="ebankc-weakbtn">EXECL(.xls)</a>
+                            <a href="javascript:;" class="ebankc-weakbtn">文本(.dlt)</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ebankc-mc-part">
+                <!--下载弹窗类-->
+                <div class="ebankc-pop-down">
+                    <div class="ebankc-close1"></div>
+                    <div class="ebankc-mc-part ebanck-mc-partpop ebankc-mc-queryterms ebankc-mc-leftcolor">
+                        <div class="ebankc-mcp-row ebankc-mcp-rownotitle">
+                            <label>收款单位称:</label><span class="ebankc-mcp-rowwecheese"><s>aaaaaamaty003.c.0200</s><s>(we cheese)aaaaaaa</s></span>
+                        </div>
+                        <div class="ebankc-mcp-row">
+                            <label class="allradiocheckbox">授权状态:</label><div class="ebankc-mcp-rowcontain">
+                                    <div class="ebankc-mcp-rowcontainchild">
+                                        <span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>转出</span>
+                                    </div><div class="ebankc-mcp-rowcontainchild">
+                                        <span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>转出</span>
+                                    </div><div class="ebankc-mcp-rowcontainchild">
+                                        <span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>转出</span>
+                                    </div><div class="ebankc-mcp-rowcontainchild">
+                                        <span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>转出</span>
+                                    </div><div class="ebankc-mcp-rowcontainchild">
+                                        <span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>转出</span>
+                                    </div><div class="ebankc-mcp-rowcontainchild">
+                                        <span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>hehello-he llollo</span>
+                                    </div><div class="ebankc-mcp-rowcontainchild">
+                                        <span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>helloh ellohell ohello</span>
+                                    </div><div class="ebankc-mcp-rowcontainchild">
+                                        <span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>helloh ellohell ohello</span>
+                                    </div><div class="ebankc-mcp-rowcontainchild">
+                                        <span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>helloh ellohell ohello</span>
+                                    </div><div class="ebankc-mcp-rowcontainchild">
+                                        <span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>helloh ellohell ohel lo</span>
+                                    </div>
+                                    
+                                </div>
+                        </div>
+                        <div class="ebankc-mcp-row">
+                            <label>授权状态:</label><span>12345678901234567812345678901234567899</span>
+                        </div>
+                        <div class="ebankc-mcp-row">
+                            <label><s>*</s>上传文件:</label><input type="text" placeholder="支持excel格式，上传前请关闭文件" class="ebankc-inputtext"/><a href="javascript:;" class="ebankc-weakbtn ebankc-inputfile">浏览</a><a href="javascript:;" class="ebankc-bombBox">下载模板</a>
+                        </div>
+                        <div class="ebankc-mcp-row">
+                            <label><s>*</s>上传文件:</label><input type="text" placeholder="支持excel格式，上传前请关闭文件" class="ebankc-inputtext"/><a href="javascript:;" class="ebankc-weakbtn ebankc-inputfile">浏览</a><a href="javascript:;" class="ebankc-bombBox">下载模板</a>
+                        </div>
+                        <div class="ebankc-mcp-clickshow"><a href="javascript:;" class="ebankc-collect" id="spr_col_btn"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ebankc-mc-part">
+                <!--tab切换弹窗类-->
+                <div class="ebankc-pop-tab">
+                    <div class="ebankc-close2"></div>
+                    <div class="ept-tab">
+                        <ul>
+                            <li class="active">
+                                <a href="javascript:;">智能推荐</a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;">热门银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">ABCDEFG</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">HIJKLMN</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">OPQRST</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">UVWXYZ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ept-content eptc-1">
+                        <p>已为您智能匹配出以下结果</p>
+                        <ul>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ept-content">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ept-content">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ept-content">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ept-content">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ept-content">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">中国工商银行</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ebankc-mc-part">
+                <!--无标题表单弹窗类-->
+                <div class="ebankc-pop-table ebankc-table ebankc-table-notitle">
+                    <div class="ebankc-close2"></div>
+                    <table>
+                        <thead>
+                            <th>账号</th>
+                            <th>户名</th>
+                            <th>用途</th>
+                            <th>自由分类</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0200****2324</td>
+                                <td>A公司A公司A公司A公司</td>
+                                <td>
+                                    <div class="clearfix ebankc-select1-box">
+                                        <dl class="ebankc-select1">
+                                            <dt></dt>
+                                            <dd>
+                                                <ul>
+                                                    <li><a href="javascript:;">水费</a></li>
+                                                    <li>
+                                                        <a href="javascript:;"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;"></a>
+                                                    </li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="textarea" contenteditable="true"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0200****2324</td>
+                                <td>A公司A公司A公司A公司</td>
+                                <td>
+                                    <div class="clearfix ebankc-select1-box">
+                                        <dl class="ebankc-select1">
+                                            <dt></dt>
+                                            <dd>
+                                                <ul>
+                                                    <li><a href="javascript:;">水费</a></li>
+                                                    <li>
+                                                        <a href="javascript:;"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;"></a>
+                                                    </li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="textarea" contenteditable="true"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0200****2324</td>
+                                <td>A公司A公司A公司A公司</td>
+                                <td>
+                                    <div class="clearfix ebankc-select1-box">
+                                        <dl class="ebankc-select1">
+                                            <dt></dt>
+                                            <dd>
+                                                <ul>
+                                                    <li><a href="javascript:;">水费</a></li>
+                                                    <li>
+                                                        <a href="javascript:;"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;"></a>
+                                                    </li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="textarea" contenteditable="true"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="ebankc-previewandempty">
+                            <a href="javascript:;" class="ebankc-bombBox">预览</a>
+                            <a href="javascript:;" class="ebankc-bombBox">清空</a>
+                    </div>
+                    <div class="ebankc-mcp-btns">
+                        <button class="ebankc-commonbtn">保存</button>
+                        <button class="ebankc-weakbtn">取消</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ebankc-mc-part">
+                <!--选择分类弹窗类-->
+                <div class="ebankc-pop-setclass">
+                    <p>
+                        <span class="ebankc-inputcheckbox"><input type="checkbox" name="yongtu1" value="1" class="ebankc-checkboxclass"/></span><a href="" class="ebankc-btmborder">用途1</a>
+                    </p>
+                    <div class="ebankc-setclass">
+                        <dl>
+                            <dt>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" indeterminate=ture name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><a href="" class="ebankc-btmborder">分类1</a>
+                            </dt>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                        </dl>
+                        <dl class=" ebankc-nobtm">
+                            <dt>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><a href="" class="ebankc-btmborder">分类2</a>
+                            </dt>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <p>
+                        <span class="ebankc-inputcheckbox"><input type="checkbox" name="yongtu2" value="1" class="ebankc-checkboxclass"/></span><a href="" class="ebankc-btmborder">用途2</a>
+                    </p>
+                    <p>
+                        <span class="ebankc-inputcheckbox"><input type="checkbox" name="yongtu3" value="1" class="ebankc-checkboxclass"/></span><a href="" class="ebankc-btmborder">用途3</a>
+                    </p>
+                    <div class="ebankc-mcp-btns">
+                        <button class="ebankc-weakbtn">返回</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ebankc-mc-part">
+                <!-- <div class="ebankc-pop-down">
+                    <div class="ebankc-close1"></div>
+                    <div class="epd-item">
+                        <span>下载明细</span>
+                        <p>
+                            <a class="epd-item-xls active" href="javascript:;">EXECL(.xls)</a>
+                            <a href="javascript:;">EXECL(.csv)</a>
+                            <a href="javascript:;">文本(.dlt)</a>
+                            <i>自定义下载格式</i>
+                            <i>今日明细</i>
+                            <u></u>
+                        </p>
+                    </div>
+                    <div class="ebankc-item-content content-xls">
+                        <ul class="con-add clearfix">
+                            <li><i></i>附言</li>
+                            <li><i></i>借方发生额</li>
+                            <li><i></i>贷方发生额</li>
+                        </ul>
+                        <ul class="con-min clearfix">
+                            <li><i></i>凭证号</li>
+                            <li><i></i>本方账号</li>
+                            <li><i></i>对方账号</li>
+                            <li><i></i>交易时间</li>
+                            <li><i></i>借/贷</li>
+                            <li><i></i>金额</li>
+                            <li><i></i>对方账号</li>
+                            <li><i></i>摘要</li>
+                            <li><i></i>用途</li>
+                            <li><i></i>个性化信息</li>
+                            <li><i></i>余额</li>
+                            <li><i></i>对方单位名称</li>
+                        </ul>
+                        <p>温馨提示:下载历史明细和下载今日明细已合并，如需修改，可在下表中带“-”号字段来编辑</p>
+                        <div class="ebankc-link-set">
+                            <button class="ebankc-minbtn">确定</button>
+                        </div>
+                    </div>
+                    <div class="epd-item">
+                        <span>下载回单信息</span>
+                        <p>
+                            <a href="javascript:;">EXECL(.xls)</a>
+                            <a href="javascript:;">文本(.dlt)</a>
+                        </p>
+                    </div>
+                </div> -->
+            </div>
+            <div class="ebankc-mc-part">
+                <div class="ebankc-pop-handle">
+                    <div class="ebankc-close1"></div>
+                    <div class="ebankc-item-content content-xls">
+                        <ul class="con-min clearfix">
+                            <li><i></i><a href="javascript:;">附言</a></li>
+                            <li><i></i><a href="javascript:;">借方发生额</a></li>
+                            <li><i></i><a href="javascript:;">贷方发生额</a></li>
+                        </ul>
+                        <ul class="con-add clearfix">
+                            <li><i></i><a href="javascript:;">凭证号</a></li>
+                            <li><i></i><a href="javascript:;">本方账号</a></li>
+                            <li><i></i><a href="javascript:;">对方账号</a></li>
+                            <li><i></i><a href="javascript:;">交易时间</a></li>
+                            <li><i></i><a href="javascript:;">借/贷</a></li>
+                            <li><i></i><a href="javascript:;">金额</a></li>
+                            <li><i></i><a href="javascript:;">对方账号</a></li>
+                            <li><i></i><a href="javascript:;">摘要</a></li>
+                            <li><i></i><a href="javascript:;">用途</a></li>
+                            <li><i></i><a href="javascript:;">个性化信息</a></li>
+                            <li><i></i><a href="javascript:;">余额</a></li>
+                            <li><i></i><a href="javascript:;">对方单位名称</a></li>
+                        </ul>
+                        <div class="wxtip clearfix">
+                            <p class="wxtip-left">温馨提示：</p>
+                            <p class="wxtip-right">下载历史明细和下载今日明细已合并，如需修改，可</p>
+                        </div>
+                        <div class="ebankc-mcp-btns">
+                            <button class="ebankc-commonbtn">确定</button>
+                            <button class="ebankc-weakbtn">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ebankc-mc-part">
+                <!--定期存款产品说明 弹出框结构 -->
+                <div class="ebankc-instruction">
+                    <div class="ebankc-instructiontitle">人民币三个月单位定期存款</div>
+                    <div>一、产品定义</div>
+                    <div><p>人民币山个月单位定期存款是银行与村矿人双方在存款是事先约定期限（三个月）、利率、到期后支取本息的存款人民币山个月单位定期存款是银行与村矿人双方在存款是事先约定期限（三个月）、利率、到期后支取本息的存款人民币山个月单位定期存款是银行与村矿人双方在存款是事先约定期限（三个月）、利率、到期后支取本息的存款</p></div>
+                    <div>二、功能用途</div>
+                    <div>三、申办流程</div>
+                    <div><p>人民币山个月单位定期存款是银行与村矿人双方在存款是事</p></div>
+                    <div>
+                        <span class="ebankc-inputcheckbox"><input type="checkbox" checked=true name="yongtu1" value="1" class="ebankc-checkboxclass"></span><span>已阅读并同意该条款</span>
+                    </div>
+                    <div class="ebankc-mcp-btns">
+                        <button type="button" class="ebankc-commonbtn">关闭</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="ebankc-mc-part">
+                <!-- 遮罩弹窗 -->
+                <button class="for-shadow">点击显示遮罩弹窗</button>
+                <div class="ebankc-pop-shadow-box">
+                </div>
+                <div class="ebankc-pop-shadow">
+                    <div class="ebankc-close1"></div>
+                    <h4>提示信息</h4>
+                    <p>个性化定制样表至少有一个元素！</p>
+                    <div class="ebankc-mcp-btns">
+                        <button type="button" class="ebankc-weakbtn">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ebankc-main-end"></div>
+        <div class="ebankc-main-copyright">
+            版权信息
+        </div>
+    </div>
+    <script src="../depends/jquery-1.6.2.min.js"></script>
+    <script src="../js/ebankc-page.js "></script>
+    <script type="text/javascript" src="../js/ebankc-classfunction.js"></script>
+    <script>
+    page("#page3", 1, 4);
+    </script>
+</body>
+
+</html>

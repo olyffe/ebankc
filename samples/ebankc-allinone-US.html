@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="IE-EmulateIE8">
+	<title>组件整合页面</title>
+	<link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-base.css">
+ 	<link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-main.css">
+ 	<link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-component.css">
+ 	<link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-table.css">
+ 	<!--[if IE 5]>
+	<link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-componentie5.css">
+ 	<![endif]-->
+	<!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+ 
+</head>
+<body>
+	<!-- 遮罩框 新功能介绍-->
+	<!-- <div class="ebankc-shade ebankc-shade-opacity" id="presentmask"></div>
+	<div class="ebankc-newpresent"> 
+		<div class="ebankc-newpresentcontent">
+			<div class="ebankc-newpresentchangeimg">
+				<ul>
+					<li class="ebankc-imgshow"><img src="../styles/transit/zh_CN/img/new1.png" alt=""></li>
+					<li><img src="../styles/transit/zh_CN/img/new2.png" alt=""></li>
+					<li><img src="../styles/transit/zh_CN/img/new3.png" alt=""></li>
+					<li><img src="../styles/transit/zh_CN/img/new4.png" alt=""></li>
+				</ul>
+			</div>
+			<div class="ebankc-newpresentchange">
+				<a href="javascript:;" class="ebankc-newpresentpre ebankc-newpresentstart"></a><ul><li class="ebankc-dotcurrent"></li><li></li><li></li><li></li></ul><a href="javascript:;" class="ebankc-newpresentnext"></a>
+			</div>
+			<div class="ebankc-newpresentclose"></div>
+			<div class="ebankc-newpresentmore"></div>	
+		</div> 
+	</div> -->
+
+		<div class="ebankc-main">
+			<!-- <div class="ebankc-main-top clearfix">
+				<span><s></s>逐笔支付<u></u></span>
+				<p>啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+				<a href="javascript:;"></a>
+			</div> -->
+			<table class="ebankc-main-top">
+				<tr>
+					<td class="ebankc-main-toptitle">
+						<span><s></s>check information reports<u></u></span>
+					</td>
+					<td>啊啊啊啊啊啊啊啊啊啊啊啊啊啊</td>
+					<td class="ebankc-main-topimg">
+						<a href="javascript:;">图1</a>
+					</td>
+					<td class="ebankc-main-topimg">
+						<a href="javascript:;">图2</a>
+					</td>
+				</tr>
+			</table>
+			<div class="ebankc-main-content clearfix">
+				<div class="ebankc-mc-part ebanck-mc-partpop ebankc-mc-3cols">
+					<div class="ebankc-mcp-row clearfix ebankc-mcp-rownotitle">
+						<div><label>名称：</label><span>1234567890123456789</span></div>
+						<div><label>单位名称：</label><span class="wrap">1222222222222222222222222222222222222222223333333333333</span></div>
+						<div><label>收单位款账号：</label><span>2015-09-09</span></div>
+					</div>
+					<div class="ebankc-mcp-row clearfix">
+						<div><label>单位名称：</label><span>啦啦啦啦啦</span></div>
+						<div><label>单位单位名称：</label><span>啦啦啦啦啦</span></div>
+						<div><label>单位名称：</label><span>啦啦啦啦啦</span></div>
+					</div>	
+					<div class="ebankc-mcp-row clearfix">
+						<div><label>单位名称：</label><span>啦啦啦啦啦</span></div>
+						<div><label>单位单位名称：</label><span>啦啦啦啦啦</span></div>
+						<div><label>单位名称：</label><span>啦啦啦啦啦</span></div>
+					</div>	
+				</div>
+				<div class="ebankc-mc-part ebankc-mc-3cols">
+					<div class="ebankc-mcp-row clearfix ebankc-mcp-rownotitle">
+						<div><label>名称：</label><span>1234567890123456789</span></div>
+						<div><label>单位名称：</label><span class="wrap">啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</span></div>
+						<div><label>收单位款账号：</label><span>2015-09-09</span></div>
+					</div>
+					<div class="ebankc-mcp-row clearfix">
+						<div><label>单位名称：</label><span>啦啦啦啦啦</span></div>
+						<div><label>单位单位名称：</label><span>啦啦啦啦啦</span></div>
+						<div><label>单位名称：</label><span>啦啦啦啦啦</span></div>
+					</div>	
+					<div class="ebankc-mcp-row clearfix">
+						<div><label>单位名称：</label><span>啦啦啦啦啦</span></div>
+						<div><label>单位单位名称：</label><span>啦啦啦啦啦</span></div>
+						<div><label>单位名称：</label><span>啦啦啦啦啦</span></div>
+					</div>	
+				</div>
+				<div class="ebankc-mc-part ebankc-mc-2cols">
+					<div class="ebankc-mcp-row clearfix ebankc-mcp-rownotitle">
+						<div class="width49persent"><label>名称：</label><span>1234567890123456789</span></div>
+						<div class="width49persent"><label>单位名称：</label><span>啦啦啦啦啦啦啦啦啦啦</span></div>
+					</div>
+					<div class="ebankc-mcp-row clearfix">
+						<div class="width49persent"><label>单单位位名称：</label><span>啦啦啦啦啦</span></div>
+						<div class="width49persent"><label>单位名称：</label><span>啦啦啦啦啦</span></div>
+					</div>
+					<div class="ebankc-mcp-row clearfix">
+						<div class="width49persent"><label>单单位位名称：</label><span>啦啦啦啦啦</span></div>
+						<div class="width49persent"><label>单位名称：</label><span>啦啦啦啦啦</span></div>
+					</div>	
+				</div>
+				<div class="ebankc-mc-part">
+					<div class="ebankc-mcp-block  ebankc-mc-3cols">
+						<div class="ebankc-mcp-row ebankc-mcp-rowtoold"><a href="javascript:;" class="ebankc-bombBox">切换至旧版</a></div>
+						<div class="ebankc-mcp-title">1.汇款单位信息</div>
+						<div class="ebankc-mcp-row clearfix">
+							<div><label>名称：</label><span>1234567890123456789</span></div>
+							<div><label>单位单位名称：</label><span>啦啦啦啦啦啦</span></div>
+							<div><label>收款账号：</label><span>2015-09-09</span></div>
+						</div>
+						<div class="ebankc-mcp-row clearfix">
+							<div><label>单位名称：</label><span>啦啦啦啦啦</span></div>
+						<div><label>单位名称：</label><span>啦啦啦啦啦</span></div>
+						<div><label>单位单位名称：</label><span>啦啦啦啦啦</span></div>
+						</div>	
+					</div>
+					<div class="ebankc-mcp-block  ebankc-mc-2cols">
+						<div class="ebankc-mcp-title">1.汇款单位信息</div>
+						<div class="ebankc-mcp-row clearfix">
+							<div><label>名称：</label><span>1234567890123456789</span></div>
+							<div><label>单位名称：</label><span>啦啦啦啦啦啦啦啦啦啦</span></div>
+						</div>
+						<div class="ebankc-mcp-row clearfix">
+							<div><label>单位名称：</label><span>啦啦啦啦啦</span></div>
+							<div><label>单位名称：</label><span>啦啦啦啦啦</span></div>
+						</div>	
+					</div>
+					<div class="ebankc-mcp-block ebankc-noborderbottom">
+						<div class="ebankc-mcp-title">1.汇款单位信息<p class="ebankc-mcp-titletotal"><span>总条数：<s>2</s></span><span>总金额：<s>3724400</s></span></p></div>
+						<div class="ebankc-mcp-row">
+							<span class="ebankc-inputcheckbox"><input type="checkbox" name="inout" value="1" class="ebankc-checkboxclass"></span><a href="" class="ebankc-btmborder">带下划线链接跳转</a>
+						</div>
+						<div class="ebankc-mcp-row">
+							<label><s>*</s>金额：</label><div class="ebankc-mcp-rowcontain"><input type="text" class="ebankc-inputtext ebankc-smalltext" id="uname"/><a href="javascript：;" class="ebankc-bombBox">交易快照</a><s class="ebankc-mcp-graytext" id="graytext1">10000元交易快快快快交元交易快快快快快快交元交易快快快快快快交元交易快快快快快快交元交易</s></div>	
+						</div>
+						<div class="ebankc-mcp-row ebankc-mcp-capital">
+							<label></label><span>壹贰叁肆伍</span>
+						</div>
+						
+						<div class="ebankc-mcp-row">
+							<label><s>*</s>账号：</label><div class="ebankc-errorbox"><input type="text" class="ebankc-inputtext ebankc-midtext ebankc-inputtexterror"  maxlength="24"/><span>错误错误</span></div><label class="ebankc-labelonline"><s>*</s>金额：</label><div class="ebankc-errorbox"><input type="text" class="ebankc-inputtext ebankc-midtext ebankc-inputtexterror"  maxlength="24"/><span>错误错误</span></div>
+						</div>
+						<div class="ebankc-mcp-row">
+							<label><s>*</s>收款账号：</label><div class="ebankc-errorbox"><input type="text" class="ebankc-inputtext"/><span>错误错误</span></div>
+							
+						</div>
+						<div class="ebankc-mcp-row">
+							<label><s>*</s>上传文件：</label><input type="text" placeholder="支持excel格式，上传前请关闭文件" class="ebankc-inputtext"/><a href="javascript:;" class="ebankc-weakbtn ebankc-inputfile">浏览</a><a href="javascript:;" class="ebankc-bombBox">下载模板</a>
+						</div>
+						
+						
+						<div class="ebankc-mcp-row">
+							<label>交易方向：</label><span class="ebankc-inputcheckbox"><input type="checkbox" name="inout" value="1" class="ebankc-checkboxclass"></span><span>转出</span><span class="ebankc-inputcheckbox"><input type="checkbox" checked=true name="inout" value="1" class="ebankc-checkboxclass"></span><span>转入</span><span class="ebankc-inputcheckbox ebankc-checkboxdisabled"><input type="checkbox" disabled="disabled" name="inout" value="1" class="ebankc-checkboxclass"></span><span>转出</span><span class="ebankc-inputcheckbox ebankc-checkboxdisabledon"><input type="checkbox" disabled="disabled" name="inout" value="1" class="ebankc-checkboxclass"></span><span>转入</span>
+						</div>
+						<div class="ebankc-mcp-row">
+							<label>复选框无图片：</label><input type="checkbox" name="nophoto" class="ebankc-checkbox"><span>可用</span><input type="checkbox" disabled="disabled" name="nophoto" class="ebankc-checkbox"><span>不可用</span>
+						</div>
+						<div class="ebankc-mcp-row">
+							<label>交易方向：</label><div class="ebankc-mcp-rowcontain">
+								<div class="ebankc-mcp-rowcontainchild">
+								<input type="text" placeholder="支持excel格式，上传前请关闭文件" class="ebankc-inputtext"/><a href="javascript:;" class="ebankc-weakbtn ebankc-inputfile">浏览</a><a href="javascript:;" class="ebankc-bombBox">下载模板</a></div>
+								<div class="ebankc-mcp-rowcontainchild">
+								<s class="ebankc-mcp-graytext">10000元交易快快快快交元交易快快快快快快交元交易快快快快快快交元交易快快快快快快交元交易</s>
+							</div></div>
+						</div>
+						<div class="ebankc-mcp-row">
+							<label>交易方向：</label><span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>借</span><span class="ebankc-inputradio"><input type="radio" checked=true name="jiedai1" value="1" class="ebankc-radioclass"></span><span>贷</span><a href="javascript:;" class="ebankc-default">默认</a><span class="ebankc-inputradio ebankc-radiodisabled"><input type="radio" disabled="disabled" name="bukeyong" value="1" class="ebankc-radioclass"></span><span>不可用</span><span class="ebankc-inputradio ebankc-radiodisabledon"><input type="radio" disabled="disabled" name="bukeyong" value="1" class="ebankc-radioclass"></span><span>不可用</span>
+						</div>
+						<div class="ebankc-mcp-row">
+							<label>单选框无图片：</label><input type="radio" name="nophotor" class="ebankc-radio"><span>可用</span><input type="radio" disabled="disabled" name="nophotor" class="ebankc-radio"><span>不可用</span>
+						</div>
+						<div class="ebankc-mcp-row">
+							<label>汇至个人账户：</label><p class="ebankc-yesornobtn"><button class="ebankc-btnactive">是</button><button>否</button></p><p class="ebankc-yesornobtndisabled"><button>是</button><button class="ebankc-lastbtn">否</button></p>
+						</div>
+						<div class="ebankc-mcp-row">
+							<label>汇至个人账户：</label><p class="ebankc-changebtns" id="unequal1"><button>小小小</button><button class="ebankc-btnactive">大大大大大大</button></p><p class="ebankc-changebtns" id="unequal2"><button>相等相等</button><button class="ebankc-btnactive">相等相等</button></p>
+						</div>
+						<div class="ebankc-mcp-row">
+							<label>汇至个人账户：</label><span>下挂保障金、贷款户</span>
+						</div>
+						<div class="ebankc-mcp-row">
+							<label><s>*</s>单个下拉框：</label><div class="ebankc-selectdrop" id="selectDrop1">
+								<input type="text" class="ebankc-inputselect" placeholder="一行一个 长度固定"/>
+								<div>
+									<p>未搜索到相关信息</p>
+					    			<ul>
+										<li><a href="javascript:;">大啊啊</a><span>删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+										<li><a href="javascript:;">小啊啊a</a><span>删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+										<li><a href="javascript:;">大啊啊aa</a><span>删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+										<li><a href="javascript:;">小啊啊aaa</a><span>删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+										<li><a href="javascript:;">大啊啊aaaa</a><span>删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+										<li><a href="javascript:;">中啊啊aaaaa</a><span>删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+										<li><a href="javascript:;">小啊啊aaaaaaa</a><span>删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+										<li><a href="javascript:;">中啊啊aaaaaaaa</a><span>删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+										<li><a href="javascript:;">中啊啊aaaaaaaaa</a><span>删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+										<li><a href="javascript:;">啊啊啊aaaaaaaaaa</a><span>删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+					    			</ul>
+								</div>
+							</div>
+						</div>	
+						<div class="ebankc-mcp-row">
+							<label><s>*</s>多个下拉框适配：</label><div class="ebankc-selectdrop" id="selectDrop2">
+								<input type="text" class="ebankc-inputselect ebankc-inputselectmore" placeholder="一行多个 无删除无箭头">
+								<div class="ebankc-online">
+									<p>未搜索到相关信息</p>
+									<ul>
+										<li><a href="javascript:;">1啊啊</a></li>
+										<li><a href="javascript:;">2啊啊啊</a></li>
+										<li><a href="javascript:;">2啊啊啊啊</a></li>
+										<li><a href="javascript:;">3啊啊啊啊啊</a></li>
+										<li><a href="javascript:;">1啊啊啊啊啊啊</a></li>
+										<li><a href="javascript:;">2啊啊啊啊啊啊啊</a></li>
+										<li><a href="javascript:;">3啊啊啊啊啊啊啊</a></li>
+										<li><a href="javascript:;">4啊啊啊啊啊啊啊啊啊</a></li>
+										<li><a href="javascript:;">4啊啊啊啊啊啊啊啊啊啊</a></li>
+										<li><a href="javascript:;">3啊啊啊啊啊啊啊啊啊啊啊啊啊啊</a></li>
+									</ul>
+								</div>
+							</div><div class="ebankc-selectdrop" id="selectDrop3">
+								<input type="text" class="ebankc-inputselect ebankc-inputselectmore" placeholder="一行多个 有删除无箭头">
+								<div class="ebankc-online">
+									<p>未搜索到相关信息</p>
+									<ul>
+										<li><a href="javascript:;">7啊啊</a><span>删除</span></li>
+										<li><a href="javascript:;">7啊啊a</a><span>删除</span></li>
+										<li><a href="javascript:;">6啊啊aa</a><span>删除</span></li>
+										<li><a href="javascript:;">4啊啊aaa</a><span>删除</span></li>
+										<li><a href="javascript:;">7啊啊aaaa</a><span>删除</span></li>
+										<li><a href="javascript:;">5啊啊aaaaa</a><span>删除</span></li>
+										<li><a href="javascript:;">6啊啊aaaaaaa</a><span>删除</span></li>
+										<li><a href="javascript:;">啊啊啊啊啊啊啊啊啊啊啊</a><span>删除</span></li>
+										<li><a href="javascript:;">啊啊啊aaaaaaaaa</a><span>删除</span></li>
+										<li><a href="javascript:;">啊啊啊aaaaaaaaaa</a><span>删除</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="ebankc-mcp-row">
+							<label><s>*</s>多个下拉框适配：</label><div class="ebankc-selectdrop" id="selectDrop13">
+								<input type="text" class="ebankc-inputselect ebankc-inputselectmore" placeholder="一行多个 有删除有箭头">
+								<div class="ebankc-online">
+									<p>未搜索到相关信息</p>
+									<ul>
+										<li><a href="javascript:;">7啊啊</a><span>删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+										<li><a href="javascript:;">7啊啊a</a><span>删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+										<li><a href="javascript:;">6啊啊aa</a><span>删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+										<li><a href="javascript:;">4啊啊aaa</a><span>删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+										<li><a href="javascript:;">7啊啊aaaa</a><span>删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+										<li><a href="javascript:;">啊啊啊啊啊啊啊啊啊啊啊</a><span>删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+										<li><a href="javascript:;">啊啊啊aaaaaaaaa</a><span>删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="ebankc-mcp-row">
+							<label><s>*</s>省市选择下拉框：</label><div class="ebankc-selectdrop" id="selectDrop5">
+								<input type="text" class="ebankc-inputselect ebankc-provincescitys" placeholder="海南省">
+								<div class="ebankc-online-provincescitys">
+									<p>未搜索到相关信息</p>
+									<ul>
+										<li><a href="javascript:;">海南省</a></li>
+										<li><a href="javascript:;">湖南省</a></li>
+									</ul>
+								</div>
+							</div><div class="ebankc-selectdrop" id="selectDrop6">
+								<input type="text" class="ebankc-inputselect ebankc-provincescitys" placeholder="海南市">
+								<div class="ebankc-online-provincescitys">
+									<p>未搜索到相关信息</p>
+									<ul>
+										<li><a href="javascript:;">海南市</a></li>
+										<li><a href="javascript:;">长沙市</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="ebankc-mcp-row">
+							<label></label><div class="ebankc-selectdrop" id="selectDrop7">
+								<input type="text" class="ebankc-inputselect ebankc-inputselect-notriangle" placeholder="可下拉选择 模糊匹配 手动输入">
+								<div class="ebankc-notriangle">
+									<p>未搜索到相关信息</p>
+									<ul>
+										<li><a href="javascript:;">海口某支行</a></li>
+										<li><a href="javascript:;">海口122某支行</a></li>
+										<li><a href="javascript:;">海口某支行</a></li>
+										<li><a href="javascript:;">海口122某支行</a></li>
+										<li><a href="javascript:;">海口某支行</a></li>
+										<li><a href="javascript:;">海口122某支行</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="ebankc-mcp-row ebankc-mcp-onebtn">
+							<label></label><button type="button" class="ebankc-commonbtn">自定义下载格式</button><button type="button" class="ebankc-weakbtn">格式</button>
+						</div>	
+						<div class="ebankc-mcp-row ebankc-mcp-rowyanzhengma">
+							<label></label><div class="ebankc-identifyimg"><img src="../styles/transit/zh_CN/img/yanzhengma.png" alt=""></div>
+						</div>
+						<div class="ebankc-mcp-row">
+							<p class="ebankc-mcp-note">注：指令处理时间以上传中的“日期”为准</p><a href="javascript:;" class="ebankc-bombBox">预约提示</a>
+						</div>
+					</div>
+				</div>
+				<div class="ebankc-mc-part">
+					<div class="ebankc-mcp-title">2.选择账户<a href="javascript:;" class="ebankc-bombBox ebankc-mcp-marginleft50">设置用户分类</a></div>
+					<div class="ebankc-mcp-row ebankc-mcp-setclassifytoprow">
+						<span class="ebankc-inputcheckbox"><input type="checkbox" name="quanxuan" value="1" class="ebankc-checkboxclass"></span><span>全选</span>
+					</div>
+					<div class="ebankc-setclasscify">
+	                    <p><span class="ebankc-inputcheckbox"><input type="checkbox" name="yongtu1" value="1" class="ebankc-checkboxclass"></span><a href="" class="ebankc-btmborder">用途1</a></p>
+	                    <div class="ebankc-setclass">
+		                       <dl>
+		                        <dt><span class="ebankc-inputcheckbox ebankc-checkboxchildnoton"><input type="checkbox" indeterminate=true name="fenlei1" value="1" class="ebankc-checkboxclass"></span><a href="" class="ebankc-btmborder">分类1</a></dt>
+		                        <dd><span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"></span>1234567890123456789</dd>
+		                        <dd><span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"></span><span>1234567890123456789</span></dd>
+		                        <dd><span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"></span><span>1234567890123456789</span></dd>
+		                        <dd><span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"></span><span>1234567890123456789</span></dd>
+		                        <dd><span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"></span><span>1234567890123456789</span></dd>
+		                        <dd><span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"></span><span>1234567890123456789</span></dd>
+		                        <dd><span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"></span><span>1234567890123456789</span></dd>
+		                        <dd><span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"></span><span>1234567890123456789</span></dd>
+		                    </dl>
+		                    <dl class=" ebankc-nobtm">
+		                        <dt><span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"></span><a href="" class="ebankc-btmborder">分类2</a></dt>
+		                        <dd><span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"></span><span>1234567890123456789</span></dd>
+		                        <dd><span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"></span><span>1234567890123456789</span></dd>
+		                        <dd><span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"></span><span>1234567890123456789</span></dd>
+		                        <dd><span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"></span><span>1234567890123456789</span></dd>
+		                        <dd><span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"></span><span>1234567890123456789</span></dd>
+		                        <dd><span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"></span><span>1234567890123456789</span></dd>
+		                        <dd><span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"></span><span>1234567890123456789</span></dd>
+		                        <dd><span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"></span><span>1234567890123456789</span></dd>
+		                    </dl>
+	                    </div> 
+	                    <p><span class="ebankc-inputcheckbox"><input type="checkbox" name="yongtu2" value="1" class="ebankc-checkboxclass"></span><a href="" class="ebankc-btmborder">用途2</a></p>
+	                    <p><span class="ebankc-inputcheckbox"><input type="checkbox" name="yongtu3" value="1" class="ebankc-checkboxclass"></span><a href="" class="ebankc-btmborder">用途3</a></p>      
+	                </div>			
+				</div>
+				<div class="ebankc-mc-part">
+						<div class="ebankc-mcp-btns">
+							<button type="button" class="ebankc-commonbtn">保存</button>
+							<button type="button" class="ebankc-weakbtn">取消</button> 
+						</div>
+						<div class="ebankc-mcp-quotatips">
+							<div class="ebankc-tipbubbles">
+								<a href="javascript:;" class="ebankc-bombBox">限额提示</a>
+								<div class="ebankc-remindbubbles" id="remindBubbles1"><p>啦啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p><span></span><a href="javascript:;" class="ebankc-bombBox ">刷新</a></div>
+							</div>		
+						</div>
+						<div class="ebankc-mcp-addorders">
+							<a href="javascript:;" class="ebankc-add"></a><a href="javascript:;">添加指令</a>
+						</div>
+						<div class="ebankc-mcp-row">
+							<span>本月2笔，已选1笔</span>
+							<div class="ebankc-tipbubbles">
+								<a href="javascript:;" class="ebankc-bombBox">限额提示</a>
+								<div class="ebankc-remindbubbles" id="remindBubbles1"><p>啦啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p><span></span><a href="javascript:;" class="ebankc-bombBox ">刷新</a></div>
+							</div>		
+						</div>
+						<div class="ebankc-mcp-row">
+							<a href="javascript:;" class="ebankc-add"></a>
+							<a href="javascript:;" class="ebankc-reduce"></a>
+							<a href="javascript:;" class="ebankc-close"></a>
+						</div>
+						<div class="ebankc-mcp-btns">
+							<button type="button" class="ebankc-commonbtn">查询汇总模式</button>
+							<!-- <div class="ebankc-selectbtn clearfix"><div class="ebankc-leftselect" id="selectDrop4"><input type="text" class="ebankc-inputselect" value="EXCEL（csv）"/><div><ul><li><a href="javascript:;">EXCEL（csv）</a></li><li><a href="javascript:;">WORD</a></li></ul></div></div><button type="button" class="ebankc-rightbtn">下载</button></div> -->
+							<button type="button" class="ebankc-commonbtn">打印</button><button type="button" class="ebankc-weakbtn">取消</button> 
+						</div>
+				</div>
+				<div class="ebankc-mc-part">
+					<div class="ebankc-mcp-title clearfix">
+						<span class="ebankc-inputcheckbox"><input type="checkbox" name="inout" value="1" class="ebankc-checkboxclass"></span><span>向用户发送短信向用户发送短信向用户发送短信向用户发送短信向用户发送短信</span>
+					</div>
+				</div>
+				<div class="ebankc-mc-part ebankc-mc-queryterms">
+					
+					<div class="ebankc-mcp-title clearfix">标题标题
+						<p>
+							<i></i>
+							<a href="javascript:;" class="ebankc-bombBox">下载所有账号明细</a><a href="javascript:;" class="ebankc-jump">上下游交易对手分析</a><a href="javascript:;" class="ebankc-jump">资金流动分析</a>
+						</p>	
+					</div>
+					<div class="ebankc-mcp-row">
+						<label><s>*</s>单位名称：</label><div class="ebankc-errorbox"><input type="text" class="ebankc-inputtext ebankc-midtext"  maxlength="24"/><span>错误错误</span></div>
+						<label class="ebankc-labelonline"><s>*</s>账号：</label>
+						<div class="ebankc-errorbox"><input type="text" class="ebankc-inputtext ebankc-midtext"  maxlength="24"/><span>错误错误</span></div>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label><span class="ebankc-inputcheckbox ebankc-nolabel"><input type="checkbox" name="inout" value="1" class="ebankc-checkboxclass"></span></label>
+						<span>向用户发送短信</span>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label><s>*</s>预约时间：</label><div class="ebankc-timecomponent">
+							<input id="hello4" class="laydate-icon"><div class="ebankc-selectdrop" id="selectDrop8">
+								<input type="text" class="ebankc-inputselect ebankc-time" placeholder="00时">
+								<div class="ebankc-online-time">
+									<ul>
+										<li><a href="javascript:;">00时</a></li>
+										<li><a href="javascript:;">01时</a></li>
+										<li><a href="javascript:;">02时</a></li>
+										<li><a href="javascript:;">03时</a></li>
+										<li><a href="javascript:;">04时</a></li>
+										<li><a href="javascript:;">05时</a></li>
+										<li><a href="javascript:;">06时</a></li>
+										<li><a href="javascript:;">07时</a></li>
+										<li><a href="javascript:;">08时</a></li>
+										<li><a href="javascript:;">09时</a></li>
+										<li><a href="javascript:;">10时</a></li>
+										<li><a href="javascript:;">11时</a></li>
+										<li><a href="javascript:;">12时</a></li>
+										<li><a href="javascript:;">13时</a></li>
+										<li><a href="javascript:;">14时</a></li>
+										<li><a href="javascript:;">15时</a></li>
+										<li><a href="javascript:;">16时</a></li>
+										<li><a href="javascript:;">17时</a></li>
+										<li><a href="javascript:;">18时</a></li>
+										<li><a href="javascript:;">19时</a></li>
+										<li><a href="javascript:;">20时</a></li>
+										<li><a href="javascript:;">21时</a></li>
+										<li><a href="javascript:;">22时</a></li>
+										<li><a href="javascript:;">23时</a></li>
+									</ul>
+								</div>
+							</div><div class="ebankc-selectdrop" id="selectDrop9">
+								<input type="text" class="ebankc-inputselect ebankc-time" placeholder="00分">
+								<div class="ebankc-online-time">
+									<ul>
+										<li><a href="javascript:;">00分</a></li>
+										<li><a href="javascript:;">01分</a></li>
+										<li><a href="javascript:;">02分</a></li>
+										<li><a href="javascript:;">03分</a></li>
+										<li><a href="javascript:;">04分</a></li>
+										<li><a href="javascript:;">05分</a></li>
+										<li><a href="javascript:;">06分</a></li>
+										<li><a href="javascript:;">07分</a></li>
+										<li><a href="javascript:;">08分</a></li>
+										<li><a href="javascript:;">09分</a></li>
+										<li><a href="javascript:;">10分</a></li>
+										<li><a href="javascript:;">11分</a></li>
+										<li><a href="javascript:;">12分</a></li>
+										<li><a href="javascript:;">13分</a></li>
+										<li><a href="javascript:;">14分</a></li>
+										<li><a href="javascript:;">15分</a></li>
+										<li><a href="javascript:;">16分</a></li>
+										<li><a href="javascript:;">17分</a></li>
+										<li><a href="javascript:;">18分</a></li>
+										<li><a href="javascript:;">19分</a></li>
+										<li><a href="javascript:;">20分</a></li>
+										<li><a href="javascript:;">21分</a></li>
+										<li><a href="javascript:;">22分</a></li>
+										<li><a href="javascript:;">23分</a></li>
+										<li><a href="javascript:;">24分</a></li>
+										<li><a href="javascript:;">25分</a></li>
+										<li><a href="javascript:;">26分</a></li>
+										<li><a href="javascript:;">27分</a></li>
+										<li><a href="javascript:;">28分</a></li>
+										<li><a href="javascript:;">29分</a></li>
+										<li><a href="javascript:;">30分</a></li>
+										<li><a href="javascript:;">31分</a></li>
+										<li><a href="javascript:;">32分</a></li>
+										<li><a href="javascript:;">33分</a></li>
+										<li><a href="javascript:;">34分</a></li>
+										<li><a href="javascript:;">35分</a></li>
+										<li><a href="javascript:;">36分</a></li>
+										<li><a href="javascript:;">37分</a></li>
+										<li><a href="javascript:;">38分</a></li>
+										<li><a href="javascript:;">39分</a></li>
+										<li><a href="javascript:;">40分</a></li>
+										<li><a href="javascript:;">41分</a></li>
+										<li><a href="javascript:;">42分</a></li>
+										<li><a href="javascript:;">43分</a></li>
+										<li><a href="javascript:;">44分</a></li>
+										<li><a href="javascript:;">45分</a></li>
+										<li><a href="javascript:;">46分</a></li>
+										<li><a href="javascript:;">47分</a></li>
+										<li><a href="javascript:;">48分</a></li>
+										<li><a href="javascript:;">49分</a></li>
+										<li><a href="javascript:;">50分</a></li>
+										<li><a href="javascript:;">51分</a></li>
+										<li><a href="javascript:;">52分</a></li>
+										<li><a href="javascript:;">53分</a></li>
+										<li><a href="javascript:;">54分</a></li>
+										<li><a href="javascript:;">55分</a></li>
+										<li><a href="javascript:;">56分</a></li>
+										<li><a href="javascript:;">57分</a></li>
+										<li><a href="javascript:;">58分</a></li>
+										<li><a href="javascript:;">59分</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label><s>*</s>起止日期：</label><div class="ebankc-mcp-rowcontain">
+							<div class="ebankc-mcp-rowcontainchild">
+								<div class="ebankc-timecomponent"><input id="hello1" class="laydate-icon"></div>至<div class="ebankc-timecomponent ebankc-mcp-marginleft10"><input id="hello2" class="laydate-icon"></div>
+							</div>
+							<div class="ebankc-mcp-rowcontainchild">
+								<a href="javascript:;" class="ebankc-refresh ebankc-active">当日</a>
+							</div>
+							<div class="ebankc-mcp-rowcontainchild">
+								<a href="javascript:;" class="ebankc-refresh">近一周</a>
+							</div>
+							<div class="ebankc-mcp-rowcontainchild">
+								<a href="javascript:;" class="ebankc-refresh">近一月</a>
+							</div>
+							<div class="ebankc-mcp-rowcontainchild">
+								<a href="javascript:;" class="ebankc-refresh">近两月</a>
+							</div>
+							<div class="ebankc-mcp-rowcontainchild">
+								<a href="javascript:;" class="ebankc-refresh">近两月</a>
+							</div>
+							<div class="ebankc-mcp-rowcontainchild">
+								<a href="javascript:;" class="ebankc-refresh">近两月</a>
+							</div>
+							<div class="ebankc-mcp-rowcontainchild">
+								<a href="javascript:;" class="ebankc-refresh">近两月</a>
+							</div>
+						</div>
+					</div>			
+					<div id="spr_col_part" style="display:none">
+						<div class="ebankc-mcp-row">
+							<label>币种：</label><div class="ebankc-errorbox"><input type="text" class="ebankc-inputtext ebankc-midtext"  maxlength="24"/><span>错误错误</span></div><label   class="ebankc-labelonline">交易方向：</label><span class="ebankc-inputradio"><input type="radio" name="jiedai2" value="1" class="ebankc-radioclass"></span><span>借</span><span class="ebankc-inputradio"><input type="radio" checked=true name="jiedai2" value="1" class="ebankc-radioclass"></span><span>贷</span>
+						</div>
+						<div class="ebankc-mcp-row">
+							<label>交易金额：</label><div class="ebankc-errorbox"><input type="text" class="ebankc-inputtext ebankc-smalltext" maxlength="15" placeholder=""/><span>错误错误</span></div>至<div class="ebankc-errorbox ebankc-mcp-marginleft10"><input type="text" class="ebankc-inputtext ebankc-smalltext" maxlength="15" placeholder=""/><span>错误错误</span></div>
+						</div>
+						<div class="ebankc-mcp-row">
+							<label>对方账号：</label><div class="ebankc-errorbox"><input type="text" class="ebankc-inputtext ebankc-midtext"  maxlength="24"/><span>错误错误</span></div><label  class="ebankc-labelonline">记账类型：</label><span class="ebankc-inputcheckbox"><input type="checkbox" name="inout" value="1" class="ebankc-checkboxclass"></span><span>逐笔</span><span class="ebankc-inputcheckbox"><input type="checkbox" name="inout" value="1" class="ebankc-checkboxclass"></span><span>汇总</span>
+						</div>			
+					</div>
+					<div class="ebankc-mcp-row ebankc-mcp-onebtn">
+							<label></label><button type="button" class="ebankc-commonbtn">自定义下载格式</button><button type="button" class="ebankc-weakbtn">格式</button>
+					</div>
+					<div class="ebankc-mcp-clickshow"><a href="javascript:;" class="ebankc-collect" id="spr_col_btn"></a></div>
+
+					<div class="ebankc-mcp-btns">
+						<button type="button" class="ebankc-commonbtn">查询</button>
+						<button type="button" class="ebankc-commonbtn">发邮件</button>
+						<button type="button" class="ebankc-commonbtn">下载</button><u></u>
+					</div>
+					<div class="ebankc-mcp-btns">
+						<button type="button" class="ebankc-weakbtn">打印回单</button><button type="button" class="ebankc-weakbtn">存入云回回单单箱</button><button type="button" class="ebankc-weakbtn">存入云</button>
+					</div>
+					<div class="ebankc-mcp-title ebankc-mcp-messagetitle">短信内容</div>
+					<div class="ebankc-mcp-row">
+						<span class="ebankc-mcp-marginright10">付款成功短信：</span><span>某某某向某某某支付111111111111111111元</span>
+					</div>
+					<div class="ebankc-mcp-rowheightauto">
+						<p class="ebankc-mcp-para">短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信短信内容短信内</p>
+					</div>
+					<div>
+						<div class="ebankc-timecomponent-downloadBox">
+							<div class="ebankc-timecomponent-download clearfix">
+								<input id="hello3" class="laydate-icon">
+								<button type="button" class="ebankc-timecomponent-downloadbtn">下载</button>	
+							</div>
+							<a href="javascript:;" class="ebankc-close"></a>	
+						</div>
+					</div>
+				</div>
+				<div class="ebankc-mc-part ebankc-mc-instrdetail ebankc-mc-leftcolor">
+					<div class="ebankc-mcp-tippara">
+						<p>提示提示提提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示示</p>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label>收款单位开户行名称：</label><span>1234567890123456789</span>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label><s>*</s>上传文件：</label><span>1234567890123456789</span>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label><s>*</s>上传文件：</label><span>1234567890123456789</span>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label>授权状态：</label><span>12345678901234567812345678901234567899</span>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label><s>*</s>上传文件：</label><span>1234567890123456789</span>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label>收款单位开户行名称：</label><span>123456789134567890123456789</span>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label>授权状态：</label><span>1234567890123456789</span>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label>收款单位开户行名称：</label><span>123456789134567890123456789123456789134567890123456789123456789134567890123456789123456789134567890123456789123456789134567890123456789123456789134567890123456789</span>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label>授权状态：</label><span>1234567890123456789</span>
+					</div>
+					<div class="ebankc-mcp-clickshow"><a href="javascript:;" class="ebankc-collect" id="spr_col_btn"></a></div>
+				</div>
+				<div class="ebankc-mc-part ebankc-mc-queryterms ebankc-mc-leftcolor">
+					<div class="ebankc-mcp-row ebankc-mcp-rownotitle">
+						<label>收开户行名称：</label><div class="ebankc-mcp-rowcontain">
+							<div class="ebankc-mcp-rowcontainchild">
+								<div class="ebankc-timecomponent"><input id="hello1" class="laydate-icon"></div>至<div class="ebankc-timecomponent ebankc-mcp-marginleft10"><input id="hello2" class="laydate-icon"></div>
+							</div>
+							<div class="ebankc-mcp-rowcontainchild">
+								<a href="javascript:;" class="ebankc-refresh ebankc-active">当日</a>
+							</div>
+							<div class="ebankc-mcp-rowcontainchild">
+								<a href="javascript:;" class="ebankc-refresh">近一周</a>
+							</div>
+							<div class="ebankc-mcp-rowcontainchild">
+								<a href="javascript:;" class="ebankc-refresh">近一月</a>
+							</div>
+							<div class="ebankc-mcp-rowcontainchild">
+								<a href="javascript:;" class="ebankc-refresh">近两月</a>
+							</div>
+							<div class="ebankc-mcp-rowcontainchild">
+								<a href="javascript:;" class="ebankc-refresh">近两月</a>
+							</div>
+							<div class="ebankc-mcp-rowcontainchild">
+								<a href="javascript:;" class="ebankc-refresh">近两月</a>
+							</div>
+							<div class="ebankc-mcp-rowcontainchild">
+								<a href="javascript:;" class="ebankc-refresh">近两月</a>
+							</div>
+						</div>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label>收款单名称：</label><span>123456789134567890123456789</span>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label>授权状态：</label><div class="ebankc-mcp-rowcontainleft">
+							<div class="ebankc-mcp-rowcontainchild">
+								<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>转出</span>
+							</div><div class="ebankc-mcp-rowcontainchild">
+								<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>转出</span>
+							</div><div class="ebankc-mcp-rowcontainchild">
+								<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>转出</span>
+							</div><div class="ebankc-mcp-rowcontainchild">
+								<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>转出</span>
+							</div><div class="ebankc-mcp-rowcontainchild">
+								<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>转出</span>
+							</div><div class="ebankc-mcp-rowcontainchild">
+								<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>hehello-he llollo</span>
+							</div><div class="ebankc-mcp-rowcontainchild">
+								<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>helloh ellohell ohello</span>
+							</div><div class="ebankc-mcp-rowcontainchild">
+								<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>helloh ellohell ohello</span>
+							</div><div class="ebankc-mcp-rowcontainchild">
+								<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>helloh ellohell ohello</span>
+							</div><div class="ebankc-mcp-rowcontainchild">
+								<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>helloh ellohell ohel lo</span>
+							</div>
+						</div>
+						<div class="ebankc-mcp-rowcontainright">
+							<button type="button" class="ebankc-commonbtn">查询</button>
+						</div>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label>收款单名称：</label><span>123456789134567890123456789</span>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label>收款单名称：</label><span>123456789134567890123456789</span>
+					</div>
+					<div class="ebankc-mcp-row">
+						<p class="ebankc-mcp-note">注：指令处理时间以上传中的“日期”为准</p><a href="javascript:;" class="ebankc-bombBox">预约提示</a>
+					</div>
+					<div class="ebankc-mcp-row ebankc-mcp-clickshowleft">
+						<label></label><a href="javascript:;" class="ebankc-collect" id="spr_col_btn"></a>
+					</div>
+				</div>
+				<div class="ebankc-mc-part ebankc-mc-1cols ebankc-mc-leftcolor">
+					<div class="ebankc-mcp-row ebankc-mcp-rownotitle">
+						<label>收款单位称：</label><span class="ebankc-mcp-rowwecheese"><s>aaaaaamaty003.c.0200</s><s>(we cheese)aaaaaaa</s></span>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label class="allradiocheckbox">授权状态：</label><div class="ebankc-mcp-rowcontain">
+								<div class="ebankc-mcp-rowcontainchild">
+									<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>转出</span>
+								</div><div class="ebankc-mcp-rowcontainchild">
+									<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>转出</span>
+								</div><div class="ebankc-mcp-rowcontainchild">
+									<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>转出</span>
+								</div><div class="ebankc-mcp-rowcontainchild">
+									<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>转出</span>
+								</div><div class="ebankc-mcp-rowcontainchild">
+									<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>转出</span>
+								</div><div class="ebankc-mcp-rowcontainchild">
+									<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>hehello-he llollo</span>
+								</div><div class="ebankc-mcp-rowcontainchild">
+									<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>helloh ellohell ohello</span>
+								</div><div class="ebankc-mcp-rowcontainchild">
+									<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>helloh ellohell ohello</span>
+								</div><div class="ebankc-mcp-rowcontainchild">
+									<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>helloh ellohell ohello</span>
+								</div><div class="ebankc-mcp-rowcontainchild">
+									<span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span><span>helloh ellohell ohel lo</span>
+								</div>
+								
+							</div>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label>授权状态：</label><span>12345678901234567812345678901234567899</span>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label><s>*</s>上传文件：</label><input type="text" placeholder="支持excel格式，上传前请关闭文件" class="ebankc-inputtext"/><a href="javascript:;" class="ebankc-weakbtn ebankc-inputfile">浏览</a><a href="javascript:;" class="ebankc-bombBox">下载模板</a>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label><s>*</s>上传文件：</label><input type="text" placeholder="支持excel格式，上传前请关闭文件" class="ebankc-inputtext"/><a href="javascript:;" class="ebankc-weakbtn ebankc-inputfile">浏览</a><a href="javascript:;" class="ebankc-bombBox">下载模板</a>
+					</div>
+					<div class="ebankc-mcp-clickshow"><a href="javascript:;" class="ebankc-collect" id="spr_col_btn"></a></div>
+				</div>
+				<div class="ebankc-mc-part ebankc-mc-result">
+					<div class="ebankc-mcp-title">
+						<span><a href="javascript:;" class="ebankc-success"></a>提交成功</span>
+					</div>
+					<p class="ebankc-mcp-marginbottom15">您的批量文件批次号为:HQGXXXX</p>
+					<div class="ebankc-mcp-row">
+						<label>交易快照：</label><input type="text" class="ebankc-inputtext" maxlength="24" placeholder=""/><a href="javascript:;" class="ebankc-bombBox">+保存</a>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label>收款人：</label><span>北京市甲乙丙丁</span><s class="ebankc-mcp-graytext">已保存</s>
+					</div>
+					<div class="ebankc-mcp-btns">
+						<button type="button" class="ebankc-commonbtn">继续收款</button>
+						<button type="button" class="ebankc-commonbtn">查看指令</button>
+					</div>
+				</div>
+				<div class="ebankc-mc-part ebankc-mc-result">
+					<div class="ebankc-mcp-title">
+						<span><a href="javascript:;" class="ebankc-fail"></a>提交失败</span>
+					</div>
+					<p>hellohello hello hellohellohell ohello,hellohe llohell ohelloh ellohel lohellohellohellohello,hellohellohe llohello hellohelloh ellohell ohelloh ellohello hello</p>
+					<p>hellohello hello hellohellohell</p>
+					<p>您为:的批量文件批次号的批量的批量文件批次文件批次号的批量文批次号文件件</p>
+					<p>您为:的批量文件批次号的批量的</p>
+					<div class="ebankc-mcp-btns">
+						<button type="button" class="ebankc-commonbtn">继续收款</button>
+					</div>
+				</div>
+				<div class="ebankc-mc-part ebankc-mc-result">
+					<div class="ebankc-mcp-title">
+						<span><a href="javascript:;" class="ebankc-doubtable"></a>可疑交易</span>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label>交易快照:</label><input type="text" class="ebankc-inputtext" maxlength="24" placeholder=""/><a href="javascript:;" class="ebankc-bombBox">+保存</a>
+					</div>
+					<div class="ebankc-mcp-row">
+						<label>收款人:</label><span>北京市甲乙丙丁</span><s class="ebankc-mcp-graytext">已保存</s>
+					</div>
+					<div class="ebankc-mcp-btns">
+						<button type="button" class="ebankc-commonbtn">继续收款</button>
+					</div>
+				</div>
+				<!-- <div class="ebankc-mc-part ebankc-mc-result">
+					<div class="ebankc-mcp-row">
+						<label><s>*</s>请选择分之机构:</label>
+						<div class="ebankc-selectdrop" id="selectDrop14">
+							<input type="text" class="ebankc-inputselect" placeholder="一行一个 长度固定"/>
+							<div style="display:none">
+						    	<ul>
+									<li><a href="javascript:;">大啊啊</a><span style="display:none">删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+									<li><a href="javascript:;">小啊啊a</a><span style="display:none">删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+									<li><a href="javascript:;">大啊啊aa</a><span style="display:none">删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+									<li><a href="javascript:;">小啊啊aaa</a><span style="display:none">删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+									<li><a href="javascript:;">大啊啊aaaa</a><span style="display:none">删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+									<li><a href="javascript:;">中啊啊aaaaa</a><span style="display:none">删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+									<li><a href="javascript:;">小啊啊aaaaaaa</a><span style="display:none">删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+									<li><a href="javascript:;">中啊啊aaaaaaaa</a><span style="display:none">删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+									<li><a href="javascript:;">中啊啊aaaaaaaaa</a><span style="display:none">删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+									<li><a href="javascript:;">啊啊啊aaaaaaaaaa</a><span style="display:none">删除</span><i href="javascript:;" class="ebankc-down"></i><i href="javascript:;" class="ebankc-up"></i></li>
+						    	</ul>
+							</div>
+						</div>
+					</div>
+					<div class="ebankc-mcp-btns">
+						<button type="button" class="ebankc-commonbtn">下一步</button>
+						<button type="button" class="ebankc-weakbtn">取消</button>
+					</div>
+				</div> -->
+				<div class="ebankc-mc-part">
+					<div class="ebankc-mcp-3or4tab">
+						<ul>
+							<li><a href="javascript:;">待处理人事发薪指令</a></li>
+							<li><a href="javascript:;">批量支付</a></li>
+							<li><a href="javascript:;">他行资金退回</a></li>
+							<li class="ebankc-active"><a href="javascript:;">他行资金明细查询</a></li>
+							<li><a href="javascript:;">指令查询</a></li>
+							<li><a href="javascript:;">电子工资单上传及管理</a></li>
+							<li><a href="javascript:;">指令查询</a></li>
+							<li><a href="javascript:;">电子工管理</a></li>
+						</ul>
+						<a href="javascript:;" class="ebankc-left"></a>
+						<a href="javascript:;" class="ebankc-right"></a>
+						
+					</div>
+				</div>
+				<div class="ebankc-mc-part">
+					<div class="ebankc-mcp-noresult">无结果</div>
+				</div>
+				<div class="ebankc-mc-part">
+					<div class="ebankc-mcp-tippara">
+						<p>无结无结果无结果无结果无结果无结果无结果无结果无结果无结果无结无结无结无结无结无结果无结果无结果无结果无结果果无结果果</p>
+					</div>
+				</div>
+				<div class="ebankc-mc-part">
+					<div class="ebankc-mcp-tippara">
+						<p>无结无结果无结果无结</p>
+					</div>
+					<div class="ebankc-mcp-btns">
+						<button type="button" class="ebankc-commonbtn">继续收款</button>
+					</div>
+				</div>
+				<div class="ebankc-mc-part">
+					<div class="ebankc-instructiontable">
+						<table height="625" cellSpacing="0"borderColorDark="#ffffff" cellPadding="2" width="625" 
+	borderColorLight="#e7e7e7" border="0"><br/><br/>
+	  						<tbody>
+	  							<tr>
+							
+								    <td height="25px" align="center"><strong>人民币半年单位定期存款</strong></td>
+								</tr>
+								<tr>
+								    <td width="100%" align="left">一、产品定义：</td>
+								</tr>
+								<tr>
+								    <td width="100%" align="left">&nbsp;&nbsp;  人民币半年单位定期存款是银行与存款人双方在存款时事先约定期限（半年）、利率，到期后支取本息的存款。人民币半年单位定期存款是银行与存款人双方在存款时事先约定期限利率，到期后支取本息的存款</td>
+								</tr>
+								<tr>
+								    <td width="100%" align="left">二、功能用途：</td>
+								</tr>
+								<tr>
+								    <td width="100%" align="left">&nbsp;&nbsp;</td>
+								</tr>
+								<tr>
+								    <td width="100%" align="left">三、申办流程：</td></tr>
+								<tr>
+								    <td width="100%" align="left">&nbsp;&nbsp;  客户申请开立单位定期存款账户，应向我行提供开户申请书、企业法人执照或营业执照等开户资料，然后方可在柜面或网银办理定期存款业务。</td>
+								</tr>
+								<tr>
+								    <td width="100%" align="left">四、客户指南：</td>
+								</tr>
+								<tr>
+								    <td width="100%" align="left">&nbsp;&nbsp;</td>
+								</tr>
+								<tr>
+								    <td width="100%" align="left"><strong>注：阅读后点击"已阅读并同意"则认可说明书条款。</strong></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="ebankc-instructiontable">
+						<p align="right">缂栧彿:<v>SD_APPLYCODE</v></p>
+						<p><h1 align="center">涓浗宸ュ晢閾惰缁撴瀯鎬у瓨娆句笟鍔″鎵樹功</h1></p>
+						<p>&nbsp;</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;鑷达細涓浗宸ュ晢閾惰鑲′唤鏈夐檺鍏徃</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;鍏瑰鎵樿吹琛屼负鎴戝叕鍙稿彊鍋氱粨鏋勬€у瓨娆句笟鍔<br>&nbsp;&nbsp;&nbsp;&nbsp;鏈鎵樿嚜<v>SD_SUBMITDATE</v>鑷<v>SD_ENDDATE</v>鏈夋晥銆傚叿浣撴潯娆惧涓嬶細
+						</p>
+						<table border="0">
+							<tr>
+								<td>鏈噾甯佺涓庨噾棰濓細</td>
+								<td>锛堝皬鍐欙級<v>SD_CURRTYPE</v><v>SD_AMOUNT</v></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>锛堝ぇ鍐欙級<v>SD_CURRTYPECN</v><v>SD_AMOUNTCN</v></td>
+							</tr>
+						</table>
+						<p>
+							浜ゆ槗鏃ワ細<v>SD_TRADATE</v><br>璧锋伅鏃ワ細<v>SD_CASHDATE</v><br>鍒版湡鏃ワ細<v>SD_MATURITY</v>锛堥伒寰伐浣滄棩鍑嗗垯<sup>[1]</sup> 锛<br>浜у搧缁撴瀯锛氭敹鐩婁笌<v>SD_LINKOBJ</v>鎸傞挬鍙岃竟涓嶈Е鍨嬬粨鏋勬€у瓨娆<br>
+						</p>
+						<table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td valign="top" nowrap>鏀剁泭璁＄畻锛</td>
+								<td>(1)銆佸鏋滃湪瑙傚療鏈熷唴锛<v>SD_LINKOBJ</v>浠庢湭杈惧埌鎴栦粠鏈獊鐮撮璁惧尯闂寸殑涓婇檺鍜屼笅闄愶紝鍒欐垜鍏徃鑾峰緱骞村寲鏀剁泭鐜<v>SD_EHIGHRATE</v>锛涙垨鑰<br>(2)銆佸鏋滃湪瑙傚療鏈熷唴锛<v>SD_LINKOBJ</v>鏇捐揪鍒版垨鏇剧獊鐮撮璁惧尯闂翠笂闄愭垨涓嬮檺锛屽垯鎴戝叕鍙歌幏寰楀勾鍖栨敹鐩婄巼<v>SD_ELOWRATE</v>銆</td>
+							</tr>
+						</table>
+						<p>
+							瑙傚療鏈燂細<v>SD_TERMDAY</v><br>棰勮鍖洪棿锛歔鍒濆姹囩巼锛<v>SD_NEGPOINT</v>BPS锛屽垵濮嬫眹鐜<v>SD_POSPOINT</v>BPS<br>鍒濆姹囩巼锛氫氦鏄撴棩鎴愪氦鏃<v>SD_LINKOBJ</v><br>璁℃伅鍩虹锛<v>SD_FUNDRULE</v><br>璁℃伅鏈燂細浠庤捣鎭棩锛堝惈锛夊紑濮嬶紝缁撴潫浜庡埌鏈熸棩锛堜笉鍚級銆傞伒寰鎭湡璋冩暣鍑嗗垯<sup>[2]</sup><br>浠樻伅鏂瑰紡锛氬崟鍒╄绠楋紝鍒版湡涓€娆℃€ф敮浠樸<br>閾惰宸ヤ綔鏃ワ細<v>SD_WORKDAY</v><br>鎻愬墠缁堟鍜屾湰閲戣繑杩橈細璐佃鍜屾垜鍏徃鍧囨棤鎻愬墠缁堟鏉冦€傝吹琛屽湪鏈骇鍝佸埌鏈熷悗杩旇繕鎴戝叕鍙00%鏈噾銆<br>鏈叕鍙稿湪璐佃璐﹀彿锛<v>SD_ACCOUNT</v><br>鍏朵粬澹版槑锛<br>&nbsp;&nbsp;&nbsp;&nbsp;1.涓轰繚璇佽涓氬姟鐨勬椤逛氦鍓诧紝璐?琛屾湁鏉冧富鍔ㄥ€熻鎴戝叕鍙镐笂杩拌处鎴枫<br>&nbsp;&nbsp;&nbsp;&nbsp;2.濡傛灉鍥犺祫閲戞潵婧愭垨鎵€闇€淇濊瘉鎺柦鏈惤瀹烇紝瀵艰嚧涓嶈兘灞ヨ浜ゅ壊鑰屽紩璧风殑鎹熷け鐢辨垜鍏徃鎵挎媴銆<br>&nbsp;&nbsp;&nbsp;&nbsp;3.鎴戝叕鍙稿凡闃呰璐佃鎻愪緵鐨勩€婁骇鍝侀闄╂彮绀?-鍙岃竟涓嶈Е鍨嬬粨鏋勬€у瓨娆俱€嬶紝鍏呭垎浜嗚В骞舵効鎰忔壙鎷呮椤逛笟鍔″彲鑳藉彂鐢熺殑椋庨櫓锛屽姙鐞嗘涓氬姟瀹屽叏鏍规嵁鎴戝叕鍙歌嚜韬垽鏂綔鍑哄喅瀹氾紝鐢辨浜х敓鐨勬崯澶辩敱鎴戝叕鍙告壙鎷呫<br>&nbsp;&nbsp;&nbsp;&nbsp;4.鍦ㄥ鎵樻湁鏁堟湡鍐咃紝璐佃鏈夋潈鎸夌収鏈鎵樿繘琛屾垚浜ゃ€傝嫢鍦ㄥ鎵樻湁鏁堟湡鍐呮湰濮旀墭鏈兘鎴愪氦锛屽垯鑷姩鍙栨秷銆
+						</p>
+						<table width="100%" border="0">
+							<tr>
+								<td width="50%"></td>
+								<td>濮旀墭鍗曚綅锛<v>SD_ACCNAME</v></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>濮旀墭鏃ワ細<v>SD_SUBMITDATE</v></td>
+							</tr>
+						</table>
+						<br><br><br>
+						<table border="0">
+							<tr>
+								<td valign="top">娉細</td>
+								<td>[1]鑻ユ煇涓€浜ゆ槗鐩稿叧鏃ユ湡涓洪潪宸ヤ綔鏃ワ紝鍒欓『寤惰嚦涓嬩竴宸ヤ綔鏃ャ€傛湰浜у搧宸ヤ綔鏃ュ寘鍚笉悓鍦板尯宸ヤ綔鏃ワ紝濡傞亣鍏朵腑浠讳竴鍦板尯闈炲伐浣滄棩锛屽垯鎸夊伐浣滄棩鍑嗗垯璋冩暣鑷冲悇鍦板尯鍚屼负宸ヤ綔鏃ョ殑鏃ユ湡銆</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>[2]濡傚埌鏈熸棩鏍规嵁宸ヤ綔鏃ュ噯鍒欒繘琛岃皟鏁达紝鍒欒鎭湡缁撴潫鏃ヤ篃鎸夌収鍚屼竴宸ヤ綔鏃ュ噯鍒欒繘琛岃皟鏁淬</td>
+							</tr>
+						</table>
+
+					</div>
+				</div>
+
+			</div>
+			<div class="ebankc-main-lamp clearfix">
+				<div class="clearfix">
+					<p id="lampandtop">
+						<a href="javascript:;" id="lamp"></a>
+						<a href="javascript:;" id="top"></a>
+					</p>
+				</div>	
+			</div>	
+			<div class="ebankc-main-end">
+				<p>bottombotombottombottombottombottobottombottombottombotbottombottombottombotbottomtmombottombottombottombottobottombottombottombotbottombottombottombotbotto</p>
+				<p>bottombottombottombottombottombottom</p>
+				<p>bottombottombottombottombottombottom</p>
+			</div>
+			<div class="ebankc-main-copyright">版权信息</div>
+		</div>
+	
+	
+	<script type="text/javascript" src="../depends/jquery-1.6.2.min.js"></script>
+   
+    <script type="text/javascript" src="../depends/laydate/laydate.js"></script>
+    <script type="text/javascript" src="../js/ebankc-classfunction.js"></script>
+	<script type="text/javascript">
+
+		// 日期组件函数
+			laydate({
+	        elem: '#hello1', //目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class        、tag但必须按照这种方式 '#id .class'
+	        format: 'YYYY-MM-DD',//日期呈现格式
+	        event: 'focus' //响应事件。如果没有传入event，则按照默认的click
+	    });
+			laydate({
+	        elem: '#hello2',
+	        format: 'YYYY-MM-DD', 
+	        event: 'focus' 
+	    });
+			laydate({
+	        elem: '#hello3',
+	        format: 'YYYY-MM-DD', 
+	        event: 'focus' 
+	    });
+			laydate({
+	        elem: '#hello4',
+	        format: 'YYYY-MM-DD',
+	        event: 'focus' 
+	    });
+
+
+		// 点击收起、展开（小三角）
+		//clicktriangle(btnid,partid);
+		//btnid为被点击三角id，partid为被展示、隐藏部分id
+	    var clicktriangle = function(btnid,partid){//btnid为被点击三角id，partid为被展示、隐藏部分id
+	        jQuery(btnid).click(function(){
+	            jQuery(partid).fadeToggle();
+	            jQuery(this).toggleClass("ebankc-spread");
+	        });
+	    };
+		clicktriangle("#spr_col_btn","#spr_col_part");
+
+
+		// 提示气泡大小自适应
+		// tipbubblessize(id);
+		//id为提示气泡id
+		// 提示气泡大小自适应
+	    var tipbubblessize =function(id){
+	        var textlen = jQuery(id).find('p').text().length;
+	        if(textlen<20){
+	            jQuery(id).width(164);
+	        }else if(textlen<50){
+	            jQuery(id).width(272);
+	        }else if(textlen<100){
+	            jQuery(id).width(332);
+	        }else if(textlen<200){
+	            jQuery(id).width(404);
+	        }
+	    };
+		tipbubblessize("#remindBubbles1");
+
+	
+    	// 下拉选择框
+    	// selectchoice(id); 
+    	// id 为下拉框组件外层div的id
+	    function selectchoice(id){
+	        var Id = jQuery(id);
+	        var Input = Id.find("input");
+	        var Inputmore =Id.find("input.inputselectmore")
+	        var Div = Id.find("div");
+	        var Divmore = Id.find("div.ebankc-online");
+	        var Ptip = Id.find("div p");
+	        var Li = Id.find("li");
+	        var A = Li.find("a");
+	        var Up = Id.find("i.ebankc-up");
+	        var Down = Id.find("i.ebankc-down");
+	        var Amore = Id.find("div.ebankc-online li a");
+	        var Span = Id.find("span");             
+	    
+	        Input.focus(function(){
+	            var max=0;
+	            var spanlen=0;
+	            var flag =0;
+	            var Inputlen =0;
+	            var Uplen =0;
+	            var Downlen =0
+	            // console.log(Amore);
+	            Amore.each(function(index,event){
+	                var that = jQuery(this);
+	                var alen = _gettextWidth(that.html())+30;
+	                // console.log(alen);
+	                if( max < alen ){
+	                    max = alen;
+	                };
+	                flag =1;    
+	            });
+	            Span.each(function(index,event){
+	                var that = jQuery(this);
+	                spanlen = _gettextWidth(that.html())+10;         
+	            });
+	            if(Up.width()){
+	                Uplen = Up.width()+20;
+	            }
+	            if(Down.width()){
+	                Downlen = Down.width()+40;
+	            }
+
+	            Inputlen = spanlen+max+Uplen+Downlen;
+	            // console.log("Inputlen"+Inputlen);
+	            if(flag){
+	                jQuery(this).width(Inputlen+30);
+	                jQuery(this).next('div').width(jQuery(this).width()+20);
+	                // console.log(jQuery(this).width());
+	            };  
+	            // console.log(11);
+	            Div.css({"display":"block","z-index":"999"}).parents('.ebankc-mcp-row').css("z-index","999");
+	            // alert(Div.css("z-index"));
+	            // alert(Div.parent().css("z-index"));
+	            // jQuery(this).css("background","#fff url(../styles/transit/zh_CN/img/zhanshou2.png) center right no-repeat"); 
+	             jQuery(this).addClass('zhanshou2');    
+	        });
+	            
+	        Li.hover(function(){  
+	            jQuery(this).css("backgroundColor","#e0e0e0");
+	            jQuery(this).children('span').css("display","block"); 
+	            jQuery(this).children('i.ebankc-up').css("display","block");  
+	            jQuery(this).children('i.ebankc-down').css("display","block");
+	        }, function(){  
+	            jQuery(this).css("backgroundColor","#fff");
+	            jQuery(this).children('span').css("display","none");  
+	            jQuery(this).children('i.ebankc-up').css("display","none");  
+	            jQuery(this).children('i.ebankc-down').css("display","none");
+	        }); 
+
+	        Li.click(function(){
+	            var con=jQuery(this).find("a").text();
+	            // Input.val(con).css("background","#fff url(../styles/transit/zh_CN/img/zhanshou1.png) center right no-repeat");
+	            Input.val(con).removeClass('zhanshou2');
+	            Div.css({"display":"none","z-index":"99"}).parents('.ebankc-mcp-row').css("z-index","99");
+	            // alert(Div.css("z-index"));
+	            // alert(Div.parent().css("z-index"));
+	        });
+
+	        Span.click(function(event){
+	            event.stopPropagation();
+	            jQuery(this).parent().remove();
+	        });
+
+	        Up.click(function(event){
+	            event.stopPropagation();
+	            jQuery(this).parent().clone(true).insertBefore(jQuery(this).parent().prev());
+	            jQuery(this).parent().remove();
+	        });
+
+	        Down.click(function(event){
+	            event.stopPropagation();
+	            jQuery(this).parent().clone(true).insertAfter(jQuery(this).parent().next());
+	            jQuery(this).parent().remove();
+	        });
+	        
+	        //文本框输入 (模糊搜索) 
+	        Input.keyup(function () { 
+	            var that = jQuery(this);
+	            Div.css({"display":"block","z-index":"999"}).parents('.ebankc-mcp-row').css("z-index","999");
+	            // alert(Div.css("z-index"));
+	            //只要输入就显示列表框  
+	            if (jQuery(this).val().length <= 0) {  
+	                Li.css('display', 'block');//
+	                Ptip.css('display', 'none');
+	                //如果什么都没填，跳出，保持全部显示状态  
+	                return;  
+	            }
+	            Li.css('display', 'none');//如果填了，先将所有的选项隐藏 
+	            Ptip.css('display', 'none');    
+	            var flag =0;
+	            for (var i = 0; i < Li.length; i++) {  
+	                //模糊匹配，将所有匹配项显示
+	                var litxt = Li.eq(i).find('a').text();
+	                var inputtxt = that.val();
+	                if ( litxt.substr(0, inputtxt.length) == inputtxt ) { 
+	                    Li.eq(i).css('display', 'block'); 
+	                    // console.log(litxt);
+	                    // console.log(inputtxt);
+	                    if (litxt==inputtxt){ 
+	                        // console.log('qq');
+	                        Li.eq(i).css("backgroundColor","#e0e0e0");
+	                        Li.eq(i).children('span').css("display","block"); 
+	                        Li.eq(i).children('i.ebankc-up').css("display","block");  
+	                        Li.eq(i).children('i.ebankc-down').css("display","block"); 
+	                        // nowlis.push(Li.eq(i));  
+	                    }else{
+	                        Li.eq(i).css("backgroundColor","#fff");
+	                        Li.eq(i).children('span').css("display","none"); 
+	                        Li.eq(i).children('i.ebankc-up').css("display","none");  
+	                        Li.eq(i).children('i.ebankc-down').css("display","none"); 
+	                    };   
+	                };
+	                flag= flag+1;
+	                if(flag == Li.length){
+	                    var flag1=0;
+	                    for (var i = 0; i < Li.length; i++){
+	                        var displaycon =Li.eq(i).css("display");
+	                        if(displaycon=="block"){
+	                            flag1= flag1+1;
+	                        };
+	                    };
+	                    // console.log(flag1);
+	                    if(flag1==0){
+	                        Ptip.css('display', 'block');
+	                    };
+	                };
+	            };
+	        }); 
+	    };
+		selectchoice("#selectDrop1");
+		selectchoice("#selectDrop2");		
+		selectchoice("#selectDrop3");
+		selectchoice("#selectDrop4");
+		selectchoice("#selectDrop5");
+		selectchoice("#selectDrop6");
+		selectchoice("#selectDrop7");
+		selectchoice("#selectDrop8");
+		selectchoice("#selectDrop9");
+		selectchoice("#selectDrop10");
+		selectchoice("#selectDrop11");
+		selectchoice("#selectDrop12");
+		selectchoice("#selectDrop13");
+		selectchoice("#selectDrop14");
+
+
+		// 切换按钮长度设置
+		// changebtnlength(id);
+		// id为 切换按钮外部包裹的p标签id
+	    var changebtnlength = function(id){
+	        var btns= jQuery(id).children('button');
+	        var leftLen=btns[0].clientWidth;
+	        var rightLen=btns[1].clientWidth;
+	        if( leftLen > rightLen ){
+	            jQuery(id).children('button').css("width",leftLen);
+	        }else {
+	            jQuery(id).children('button').css("width",rightLen);
+	        }
+	    };
+		changebtnlength("#unequal1");
+		changebtnlength("#unequal2");
+
+
+    	// 提示s.ebankc-mcp-graytext折行
+    	//graytextzhehang(id);
+    	//id 为需折行文字包裹标签s 的id
+	    var graytextzhehang =function(id){
+	        var stext =_gettextWidth(jQuery(id).text());
+	        // console.log(stext);
+	        var ssiblings = jQuery(id).siblings();
+	        var sparentlen = jQuery(id).parent().width();
+	        // console.log(sparentlen);
+	        var ssiblingslen =0;
+	        ssiblings.each(function(){
+	            ssiblingslen += jQuery(this).width();
+	        });
+	        // console.log(ssiblingslen);
+	        var slen =sparentlen -ssiblingslen-100;
+	        // console.log(slen);
+	        jQuery(id).width(slen);
+	    };
+    	graytextzhehang("#graytext1");
+    	jQuery(window).resize(function(){
+	        graytextzhehang("#graytext1");
+	    });
+		// jQuery(window).bind('resize', function () {  
+		//     if (resizeTimer) clearTimeout(resizeTimer);   
+		//     resizeTimer = setTimeout(function(){  
+		//         graytextzhehang("#graytext1");
+		//     } , 200);   
+		// });  
+
+
+
+    	// 灯泡和返回顶部
+	    //lampandtopanimate(lampandtopid,topid);
+	    //lampandtopid为小灯泡和返回顶部标签外部包裹的p标签id
+	    //topid为返回顶部标签id
+	    var lampandtopanimate =function(lampandtopid,topid){
+	        var leader= 0,target= 0,timer=null;
+	        var ptop=jQuery(lampandtopid).offset();
+	        // console.log(ptop.top);
+	        jQuery(window).scroll(function() {
+	            clearInterval(timer);
+	            target=jQuery(document).scrollTop()+ptop.top;
+	            // console.log(target);
+	            leadertop = jQuery(document).scrollTop();
+	            timer=setInterval(function(){
+	                leader=leader+(target-leader)/10;
+	                jQuery(lampandtopid).css("top",leader);
+	                // console.log(leader);
+	            },20);
+	        });
+
+	        var leadertop= 0,leadertop= 0,timertop=null;
+	        jQuery(topid).click(function(){
+	            clearInterval(timertop);
+	            targettop=0;
+	            timertop=setInterval(function(){
+	                leadertop=leadertop+(targettop-leadertop)/5;
+	                jQuery(document).scrollTop(leadertop);
+	                if(leadertop == targettop){
+	                    clearInterval(timertop);
+	                };
+	            },30);
+	        });
+	    };
+    	lampandtopanimate("#lampandtop","#top");
+	</script>
+
+</body>
+</html>

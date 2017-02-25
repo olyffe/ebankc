@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/*css 初始化 */
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../font/iconfont.woff') format('woff'), /* chrome、firefox */ url('../font/iconfont.ttf') format('truetype'),  chrome、firefox、opera、Safari, Android, iOS 4.2+ url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:#ffffff;
+}
+/*各浏览器显示不同，去掉蓝色边框*/
+/*fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}*/
+
+ul, ol {
+    list-style: none;
+}
+
+input,textarea {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "Microsoft Yahei","微软雅黑","SimSun", "宋体","Helvetica","Arial";
+    background-color:#ffffff;
+}
+
+/*去掉行内替换元素空白缝隙*/
+select, input {
+    vertical-align: middle;
+}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 14px;
+    margin: 0;
+    outline: none;
+}
+select:focus, input:focus, textarea:focus{ 
+    box-shadow: none;
+   /*border: 1px solid #94c0ed;*/
+   outline: none;
+} 
+
+input[type='checkbox']{
+ border:none;
+}
+
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+table {
+    border-collapse: collapse;
+}
+
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+a{
+    color: black;
+}
+a:link,a:visited,a:hover,a:active {
+    color: black;
+    text-decoration: none;
+    outline: none;
+}
+s, i, em ,u{
+    font-style: normal;
+    text-decoration: none;
+}
+/*工行背景色*/
+.gh-bgcolor{
+    background-color: #EDEDED;
+}
+/*公共样式*/
+.w{
+    /*版心*/
+    width: 98%;
+    
+    margin: 0 auto;
+}
+html,body{
+    width: 100%;
+    /*height: 100%;*/
+    min-width: 780px;
+    line-height: 1;
+    font-size: 14px;
+    font-family: "Microsoft Yahei","微软雅黑","SimSun", "宋体","Helvetica","Arial";
+}
+a:hover{
+    text-decoration: none;
+}
+button{
+    border: none;
+    outline: none;
+}
+.accordion-group{
+    border:none;
+    border-radius: 0;
+}
+.accordion-inner{
+    border: none;
+}
+.a-color1{
+    color: #2a79ca;
+    border-bottom: 1px solid #D6DFF0;
+}
+.a-color2{
+    display: inline-block;
+    border-bottom: 1px solid #D6DFF0;
+}

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+.ebankc-pop-shadow-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+    background-color: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.ebankc-pop-shadow {
+    width: 326px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    padding: 25px 20px 0 20px;
+    border-radius: 4px;
+    display: none;
+    z-index: 100;
+}
+
+.ebankc-pop-shadow h4 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.ebankc-pop-shadow p {
+    font-size: 14px;
+    color: #696969;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.ebankc-pop-shadow .ebankc-mcp-btns {
+    padding: 15px 0 20px 0;
+}

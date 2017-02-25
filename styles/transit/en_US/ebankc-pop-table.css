@@ -1,0 +1,36 @@
+@charset "UTF-8";
+.ebankc-pop-table {
+    width: 90%;
+    margin: 50px 5%;
+    border: 1px solid #D8D8D8;
+    *border: 2px solid #D8D8D8;
+    box-shadow: 0 0 10px #ccc;
+    font-size: 14px;
+    color: #333;
+    font-family:"Microsoft Yahei","微软雅黑","SimSun", "宋体","Helvetica","Arial";
+    background-color: #fff;
+    position: absolute;
+    border-radius: 2px;
+    z-index: 10;
+}
+
+.ept-title {
+    margin:11px 0;
+    vertical-align:middle;
+    padding-left: 25px;
+    font-size: 14px;
+    color: #333;
+}
+
+.ept-title input {
+    height: 32px;
+    width: 240px;
+    border-radius: 2px;
+}
+
+.ept-title button {
+    height: 30px;
+    margin: 0 10px;
+    vertical-align: middle;
+    cursor: pointer;
+}

@@ -1,0 +1,111 @@
+@charset "UTF-8";
+.ebankc-pop-tab {
+    width: 85%;
+    height: 370px;
+    margin: 50px 7.5%;
+    border: 1px solid #D8D8D8;
+    *border: 2px solid #D8D8D8;
+    box-shadow: 0 0 10px #ccc;
+    font-size: 14px;
+    font-family:"Microsoft Yahei","微软雅黑","SimSun", "宋体","Helvetica","Arial";
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+}
+
+.ept-tab ul {
+    height: 60px;
+    background-color: #707088;
+}
+
+.ept-tab ul li {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.ept-tab ul li a {
+    padding: 5px 20px;
+    color: #FFF;
+    border-right: 1px solid #ddd;
+}
+
+.ept-tab ul li.active {
+    background-color: #fff;
+}
+
+.ept-tab ul li.active a {
+    color: #333;
+}
+
+.ept-content {
+    display: none;
+    overflow: hidden;
+}
+.ept-content dl dt,
+.ept-content dl dd{
+    display: inline-block;
+    padding: 14px 0;
+    margin-right: 30px;
+}
+.ept-content dl dt{
+    font-size: 18px;
+    color: #d00226;
+    margin-right: 15px;
+}
+.ept-content dl{
+    padding-left: 15px;
+}
+.ept-content ul {
+    height: 300px;
+    overflow-y: auto;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.ept-content ul li {
+    float: left;
+    width: 32%;
+    padding: 22px 0;
+    text-align: center;
+}
+
+.ept-content ul li a {
+    display: inline-block;
+    width: 120px;
+    height: 29px;
+    background: url("./img/logo1.jpg") no-repeat left top #fff;
+    padding-left: 40px;
+    line-height: 29px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.ebankc-index1 {
+    z-index: 1;
+}
+
+.ebankc-index2 {
+    z-index: 2;
+}
+
+.eptc-1 {
+    display: block;
+}
+
+.eptc-1 p {
+    line-height: 20px;
+    font-size: 16px;
+    margin: 30px 50px;
+}
+
+.eptc-1 ul {
+    margin-left: 50px;
+}
+
+.eptc-1 ul li {
+    width: 100%;
+    text-align: left;
+    padding: 15px 0;
+}

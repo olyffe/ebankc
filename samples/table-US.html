@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-base.css">
+    <link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-component.css">
+    <link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-main.css">
+    <link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-table.css">
+    <link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-pop-base.css">
+    <link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-pop-down.css">
+    <style>
+    html,
+    body {
+        width: 100%;
+    }
+    
+    .ebankc-mc-part .ebankc-pop-handle {
+        top: 60px;
+        display: none;
+    }
+    </style>
+
+    <!--[if lt IE 6]>
+    <link rel="stylesheet" href="../styles/transit/zh_CN/ebankc-componentie5.css">
+    <![endif]-->
+
+
+</head>
+
+<body>
+    <div class="ebankc-main">
+        <div class="ebankc-top"></div>
+        <div class="ebankc-main-content">
+            <div class="ebankc-mc-part">
+                <div class="ebankc-mcp-tooldtable">
+                    <a href="javascript:;" class="ebankc-bombBox">切换至旧版</a>
+                 </div>
+                 <div class="ebankc-rowleft">
+                     <input type="text" placeholder="快照名称关键字或收款账号">
+                    <button type="button" class="ebankc-commonbtn ebankc-width80btn" id="prient">搜索</button>
+                    <button type="button" class="ebankc-weakbtn ebankc-width80btn">重置</button>
+                 </div>
+                 <div class="ebankc-rowcenter">
+                     <input type="text" placeholder="快照名称关键字或收款账号">
+                    <button type="button" class="ebankc-commonbtn ebankc-width80btn">搜索</button>
+                    <button type="button" class="ebankc-weakbtn ebankc-width80btn">重置</button>
+                 </div>
+                <div class="ebankc-table-box clearfix">
+                    <div class="ebankc-table">
+                        <!--超出部分出现滚动条 加上ebankc-table-content-->
+                        <div class="ebankc-table-content">
+                            <table>
+                                <thead>
+                                    <th>序号</th>
+                                    <th>存期</th>
+                                    <th>证实书号</th>
+                                    <th>币种</th>
+                                    <th>定期存款本金</th>
+                                    <th>年利率</th>
+                                    <th>起息日
+                                        <span class="ebankc-tablesort clearfix">
+                                            <a href="javascript:;" class="ebankc-tablesortup"></a>
+                                            <a href="javascript:;" class="ebankc-tablesortdown"></a>
+                                        </span>
+                                    </th>
+                                    <th>到期日</th>
+                                    <th>申报税种</th>
+                                    <th>操作</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>
+                                            <!-- <div class="textarea ebankc-save" id="editable" contentEditable="true">73948739487啊啊啊3，9，48,73，9487aaaa3，9，a3948</div> -->
+                                            <textarea name="" id="" class="textareas zhanghaowrap ebankc-save">aaaaaaaaaaaaaaaaaaaaa</textarea>
+                                        </td>
+                                        <td>810009701</td>
+                                        <td>人民币</td>
+                                        <td class="ebankc-text-right">1,000.00元</td>
+                                        <td>3%</td>
+                                        <td class="ebankc-tdnowrap">2016-01-01</td>
+                                        <td class="ebankc-tdnowrap">2016-01-01</td>
+                                        <td>
+                                            <p class="ebankc-bubbledata">消费税,增值税,个人所得税,消费税</p>
+                                            <div class="ebankc-tablebubbles">
+                                                <div class="ebankc-remindtablebubbles">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><a href="javascript:;">支出</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>
+                                            <!-- <div class="textarea textareabig" contenteditable="true">2323</div> -->
+                                            <textarea name="" id="" class="textareas zhanghaowrap">textarea啊啊啊啊啊啊111111111啊啊ssssssssssssss</textarea>
+                                        </td>
+                                        <td>810009701</td>
+                                        <td>人民币</td>
+                                        <td class="ebankc-text-right">1,000.00元</td>
+                                        <td>3%</td>
+                                        <td class="ebankc-tdnowraptimeslot">2016-01-01至2016-04-01</td>
+                                        <td class="ebankc-tdnowraptimeslot">2016-01-01至2016-04-01</td>
+                                        <td>
+                                            <p class="ebankc-bubbledatagt5">消费税,增值税,消费税,增值税,个人所得税,消费税</p>
+                                            <div class="ebankc-tablebubblesgt5">
+                                                <div class="ebankc-remindtablebubblesgt5">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><a href="javascript:;">支出</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="ebankc-page-box clearfix" id="page1">
+                            <div class="ebankc-page clearfix">
+                                <!-- <div class="ebankc-page-ext">
+                                    <span>本页2笔，已选2笔</span>
+                                </div> -->
+                                <a class="ebankc-weakbtn" href="javascript:;">下一页</a>
+                                <a class="ebankc-weakbtn" href="javascript:;">上一页</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ebankc-mc-part">
+                <div class="ebankc-table-box ebankc-table-boxtop60 clearfix">
+                    <div class="ebankc-table ebankc-tableincludetitle">
+                        <div class="table-title clearfix">
+                            <div class="table-title-l">
+                                <span>账号：2626265489955,500.001</span>
+                                <span>开户行：中国工商银行</span>
+                                <span>户名：北京ASD有限公司</span>
+                            </div>
+                            <div class="table-title-r">
+                                <span>折算币种：</span>
+                                <div class="clearfix ebankc-select1-box ">
+                                    <dl class="ebankc-select1 ">
+                                        <dt>日元</dt>
+                                        <dd>
+                                            <ul>
+                                                <li><a href="javascript:; ">日元</a></li>
+                                                <li>
+                                                    <a href="javascript:; "></a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:; "></a>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ebankc-table-content">
+                            <table>
+                                <thead>
+                                    <th></th>
+                                    <th>交易时间</th>
+                                    <th>转出金额</th>
+                                    <th>转入金额</th>
+                                    <th>币种</th>
+                                    <th>对方账号</th>
+                                    <th>操作</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span>
+                                        </td>
+                                        <td class="ebankc-tdnowrap">
+                                            <p>2016-01-30</p>
+                                            <p>10：00</p>
+                                        </td>
+                                        <td class="ebankc-text-right">1,002,123.00</td>
+                                        <td class="ebankc-text-right">1,002,123.00</td>
+                                        <td>人民币 钞</td>
+                                        <td>
+                                            <i>0200***1247</i>
+                                            <p>跨行行号 123***5140</p>
+                                        </td>
+                                        <td class="ebankc-link">
+                                            <p><a href="javascript:;">回单</a></p>
+                                            <p><a href="javascript:;">存入云回单箱</a></p>
+                                            <p><a href="javascript:;">汇总明细查询</a></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="ebankc-page-box" id="page2">
+                            <!-- <div class="ebankc-page-ext">
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="xuanze" value="1" class="ebankc-checkboxclass"/></span>
+                                <span>全选</span>
+                                <i>打印回单</i>
+                                <i>存入云回单箱</i>
+                                <i>下载回单</i>
+                            </div> -->
+                            <div class="ebankc-page clearfix">
+                                <div class="ebankc-page-ext">
+                                    <span class="ebankc-inputradio"><input type="radio" name="jiedai1" value="1" class="ebankc-radioclass"></span>
+                                    <span>全选</span>
+                                    <a href="javascript:;" class="ebankc-weakbtn">打印回单</a>
+                                    <a href="javascript:;" class="ebankc-weakbtn">存入云回单箱</a>
+                                    <a href="javascript:;" class="ebankc-weakbtn">下载回单</a>
+                                </div>
+                                <a class="ebankc-weakbtn" href="javascript:;">下一页</a>
+                                <a class="ebankc-weakbtn" href="javascript:;">上一页</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ebankc-mc-part">
+                <div class="ebankc-table-box clearfix">
+                    <div class="ebankc-table ebankc-tableincludetitle">
+                        <div class="table-title clearfix">
+                            <div class="table-title-l">
+                                <span>用途：收款</span>
+                                <span>分类：<a href="javascript:; ">华北</a></span>
+                            </div>
+                            <div class="table-title-r ">
+                                <a class="ebankc-weakbtn" href="javascript:;">下一页</a>
+                                <span><i><a href="javascript:; ">下载余额</a></i></span>
+                                <span><i><a href="javascript:; ">下载新格式余额</a></i></span>
+                            </div>
+                        </div>
+                        <div class="ebankc-table-content">
+                            <table>
+                                <thead>
+                                    <th>账号</th>
+                                    <th>账号</th>
+                                    <th>别名</th>
+                                    <th>币种</th>
+                                    <th>余额</th>
+                                    <th>可用余额</th>
+                                    <th>昨日余额</th>
+                                    <th class="ebankc-handle">操作</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                <span class="ebankc-accountbubblebox">
+                                                    <s class="ebankc-remindaccountbubbles">
+                                                    <span></span>
+                                                    <s class="ebankc-accountdata">12345678967896789</s>
+                                                    </s>
+                                                    <a href="javascript:;">1234****6789</a>
+                                                </span>
+                                            </p>
+                                            <p class="ebankc-admin ">北京某某某公司北京某某某公司北京某某某</p>
+                                        </td>
+                                        <td>
+                                            <!-- <div class="textarea" contenteditable="true"></div> -->
+                                            <textarea name="" id="" class="textareas ifnum"  placeholder="textarea提示文字提示文字"></textarea>
+                                        </td>
+                                        <td class="zhanghaowrap">12345678912341234567</td>
+                                        <td>
+                                            <p>人民币 钞</p>
+                                            <p>美元 钞</p>
+                                        </td>
+                                        <td class="ebankc-text-right">
+                                            <p>1,002,123.00</p>
+                                            <p>1,002,123.00</p>
+                                        </td>
+                                        <td class="ebankc-text-right">
+                                            <p>1,002,123.00</p>
+                                            <p>1,002,123.00</p>
+                                        </td>
+                                        <td class="ebankc-text-right">
+                                            <p>1,002,123.00</p>
+                                            <p>1,002,123.00</p>
+                                        </td>
+                                        <td class="ebankc-link-w">
+                                            <p>
+                                                <a href="javascript:; " class="ebankc-disabled">明细</a>
+                                                <a href="javascript:; " class="ebankc-disabled">对账</a>
+                                                <a href="javascript:; " class="ebankc-disabled">详情</a>
+                                            </p>
+                                            <p>
+                                                <a href="javascript:; ">明细</a>
+                                                <a href="javascript:; ">对账</a>
+                                                <a href="javascript:; ">详情</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                <span class="ebankc-accountbubblebox">
+                                                    <s class="ebankc-remindaccountbubbles">
+                                                        <span></span>
+                                                        <s class="ebankc-accountdata">65432198767896789</s>
+                                                    </s>
+                                                    <a href="javascript:;">6543****6789</a>
+                                                </span>
+                                            </p>
+                                            <p class="ebankc-admin ">北京某某某公司北京某某某公司北京某某某</p>
+                                        </td>
+                                        <td>
+                                            <!-- <div class="textarea " contenteditable="true"></div> -->
+                                            <textarea name="" id="" class="textareas ifnum"></textarea>
+                                        </td>
+                                        <td class="zhanghaowrap">12345678912341234567</td>
+                                        <td>
+                                            <p>人民币 钞</p>
+                                        </td>
+                                        <td class="ebankc-text-right">
+                                            <p>1,002,123.00</p>
+                                        </td>
+                                        <td class="ebankc-text-right">
+                                            <p>1,002,123.00</p>
+                                        </td>
+                                        <td class="ebankc-text-right">
+                                            <p>1,002,123.00</p>
+                                        </td>
+                                        <td class="ebankc-link-w ebankc-tdnowrap">
+                                            <p>
+                                                <a href="javascript:; ">明细</a>
+                                                <a href="javascript:; ">对账</a>
+                                                <a href="javascript:; ">详情</a>
+                                            </p>
+                                            <p>
+                                                <a href="javascript:; ">查询子账户余额</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                               <span class="ebankc-accountbubblebox">
+                                                    <s class="ebankc-remindaccountbubbles">
+                                                        <span></span>
+                                                        <s class="ebankc-accountdata">0101010106789</s>
+                                                    </s>
+                                                    <a href="javascript:;">0101****6789</a>
+                                                </span> 
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <!-- <div class="textarea " contenteditable="true"></div> -->
+                                            <textarea name="" id="" class="textareas"></textarea>
+                                        </td>
+                                        <td class="zhanghaowrap">12345678912341234567</td>
+                                        <td>
+                                            <p>人民币 钞</p>
+                                        </td>
+                                        <td>
+                                            <p class="ebankc-text-right">1,002,123.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="ebankc-text-right">1,002,123.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="ebankc-text-right">1,002,123.00</p>
+                                        </td>
+                                        <td class="ebankc-link-w">
+                                            <p>
+                                                <a href="javascript:; ">明细</a>
+                                                <a href="javascript:; ">对账</a>
+                                                <a href="javascript:; ">详情</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="ebankc-tc-sum ebankc-nobtm">
+                                        <td colspan="2" class="ebankc-text-right">
+                                            <p>余额汇总（人民币）：</p>
+                                            <p>余额汇总（美　元）：</p>
+                                        </td>
+                                        <td class="ebankc-text-right">
+                                            <p>123,564,912.00</p>
+                                            <p>3,564,912.00</p>
+                                        </td>
+                                        <td class="ebankc-text-right">
+                                            <p>3,564,912.00</p>
+                                            <p>3,564,912.00</p>
+                                        </td>
+                                        <td class="ebankc-text-right">
+                                            <p>3,564,912.00</p>
+                                            <p>3,564,912.00</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="ebankc-mcp-btns">
+                        <button class="ebankc-commonbtn">查询</button>
+                        <button class="ebankc-commonbtn">重置</button>
+                        <button class="ebankc-weakbtn">返回</button>
+                    </div>
+                </div>
+                <div class="ebankc-pop-handle">
+                    <div class="ebankc-close2"></div>
+                    <div class="ebankc-item-content content-xls">
+                        <ul class="con-min clearfix ebankc-borderbottom">
+                            <li class="ebankc-borderright"><i></i>附言</li>
+                            <li class="ebankc-borderright"><i></i>借方发生额</li>
+                            <li><i></i>贷方发生额</li>
+                        </ul>
+                        <ul class="con-add clearfix">
+                            <li><i></i>凭证号</li>
+                            <li><i></i>本方账号</li>
+                            <li><i></i>对方账号</li>
+                            <li><i></i>交易时间</li>
+                            <li><i></i>借/贷</li>
+                            <li><i></i>金额</li>
+                            <li><i></i>对方账号</li>
+                            <li><i></i>摘要</li>
+                            <li><i></i>用途</li>
+                            <li><i></i>个性化信息</li>
+                            <li><i></i>余额</li>
+                            <li><i></i>对方单位名称</li>
+                        </ul>
+                        <p>温馨提示:下载历史明细和下载今日明细已合并，如需修改，可在下表中带“-”号字段来编辑</p>
+                        <div class="ebankc-mcp-btns">
+                            <button class="ebankc-weakbtn">保存</button>
+                            <button class="ebankc-weakbtn">恢复默认</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ebankc-mc-part">
+                <div class="ebankc-mcp-block">
+                    <div class="ebankc-mcp-btns">
+                        <button class="ebankc-commonbtn" id="addbtn">下表可根据tbody内容动态添加垂直滚动条</button>
+                    </div>
+                </div>
+                <div class="ebankc-mcp-block">
+                    <div class="ebankc-table-box clearfix">
+                        <div class="table-title table-titletip clearfix">
+                            <div class="table-title-l">
+                                <span>请选择并点击“支取”，系统将显示该指令的详细信息供您定期存款支取的操作。</span>
+                            </div>
+                        </div>
+                        <div class="ebankc-table">
+                            <!--超出部分出现滚动条 加上ebankc-table-content-y-->
+                            <div class="ebankc-table-divyscrolltop">
+                                <table>
+                                    <thead>
+                                        <th>序号</th>
+                                        <th>存期</th>
+                                        <th>证实书号</th>
+                                        <th>币种</th>
+                                        <th>定期存款本金</th>
+                                        <th>年利率</th>
+                                        <th>起息日</th>
+                                        <th>到期日</th>
+                                        <th>操作</th>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div id="addcontentbox">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>
+                                                <!-- <div class="textareasmall" contenteditable="true"></div> -->
+                                                <textarea name="" id="" class="textareasmall"></textarea>
+                                            </td>
+                                            <td>810009701</td>
+                                            <td>人民币</td>
+                                            <td class="ebankc-text-right">1,000.00元</td>
+                                            <td>3%</td>
+                                            <td class="ebankc-tdnowrap">2016-01-01</td>
+                                            <td class="ebankc-tdnowrap">2016-04-01</td>
+                                            <td><a href="javascript:;">支出</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ebankc-page-box" id="page3">
+                                <div class="ebankc-page clearfix">
+                                    <div class="ebankc-page-ext">
+                                        <span>本页2笔，已选2笔</span>
+                                    </div>
+                                    <a class="ebankc-weakbtn" href="javascript:;">下一页</a>
+                                    <a class="ebankc-weakbtn" href="javascript:;">上一页</a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="ebankc-mc-part">
+                <div class="ebankc-table-box clearfix">
+                        <div class="ebankc-table">
+                            <!--超出部分出现滚动条 加上ebankc-table-content-->
+                            <div class="ebankc-table-content">                       
+                                <table>
+                                    <thead>
+                                        <th>序号</th>
+                                        <th>周期</th>
+                                        <th>账户</th>
+                                        <th>账户类型</th>
+                                        <th>报告期间</th>
+                                        <th>操作</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>月报</td>
+                                            <td></td>
+                                            <td>理财</td>
+                                            <td>2018年001期</td>
+                                            <td><a href="javascript:;">发送</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>月报</td>
+                                            <td></td>
+                                            <td>存款</td>
+                                            <td>2018年089期</td>
+                                            <td class="ebankc-tabelselectbtntd clearfix"><a href="javascript:;">发送</a></td>
+                                        </tr><tr>
+                                            <td>3</td>
+                                            <td>月报</td>
+                                            <td></td>
+                                            <td>存款</td>
+                                            <td>2018年088期</td>
+                                            <td class="ebankc-tabelselectbtntd clearfix"><a href="javascript:;">发送</a></td>
+                                        </tr>
+                                        <tr class="ebankc-nobtm">
+                                            <td>4</td>
+                                            <td>月报</td>
+                                            <td></td>
+                                            <td>存款</td>
+                                            <td>2018年087期</td>
+                                            <td class="ebankc-tabelselectbtntd clearfix"><a href="javascript:;">发送</a></td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="ebankc-mcp-btns">
+                            <button class="ebankc-weakbtn">返回</button>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="ebankc-mc-part">
+                <div class="ebankc-titlecenter">综合财务报告-理财</div>
+                <div class="ebankc-table-box ebankc-table-boxreportforms clearfix">
+                    <div class="ebankc-table">
+                        <div class="table-title clearfix">
+                            <div class="table-title-u">
+                                <span>客户名称：多多测试理财专用</span>
+                                <span>协议编号：HG2123124123</span>     
+                            </div>
+                            <div class="table-title-d">
+                                <span>开始日期：2018-05-03</span>
+                                <span>截止日期：2018-05-03</span>
+                                <span>日期：2018-05-03</span>
+                                <span>币种：欧元</span>
+                                <span>单位：欧元</span>
+                            </div>
+                            <div class="ebankc-titlecenter">金融资产</div>
+                        </div>
+                        <div class="ebankc-table-content ebankc-table-content-x">
+                            <table class="ebankc-tablereportforms">
+                                <thead>
+                                    <tr>         
+                                        <th rowspan="3">账号</th>
+                                        <th rowspan="3">户名</th>
+                                        <th rowspan="3">账户简称</th>
+                                        <th rowspan="3">开户行</th>
+                                        <th rowspan="3">理财产品代码</th>
+                                        <th rowspan="3">理财产品名称</th>
+                                        <th rowspan="3">份额</th>
+                                        <th rowspan="3">期末净值</th>
+                                        <th rowspan="3">余额</th>
+                                        <th colspan="2">交易笔数</th>
+                                        <th colspan="4">交易金额</th>
+                                    </tr>
+                                    <tr>  
+                                        <th>购买申请笔数</th>
+                                        <th>赎回申请笔数</th>
+                                        <th>购买申请金额</th>
+                                        <th rowspan="2">分红金额</th>
+                                        <th colspan="2">赎回申请份额</th>
+                                    </tr>
+                                    <tr>  
+                                        <th>购买确认笔数</th>
+                                        <th>赎回确认笔数</th>
+                                        <th>购买确认金额</th>
+                                        <th>赎回本金确认金额</th>
+                                        <th>赎回收益确认金额</th>
+                                    </tr>
+                                </thead>
+                                <tbody>        
+                                    <tr>
+                                        <td rowspan="2">9558880110410</td>
+                                        <td rowspan="2">XXXXXX</td>
+                                        <td rowspan="2">李四</td>
+                                        <td rowspan="2">XXXXXX</td>
+                                        <td rowspan="2">13775550085</td>
+                                        <td rowspan="2">XXXXXX</td>
+                                        <td rowspan="2">55,333500.00</td>
+                                        <td rowspan="2">55,500.00</td>  
+                                        <td rowspan="2">55,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,3333500.00</td>
+                                        <td>55,500.00</td>
+                                        <td rowspan="2">5533333,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td colspan="2">55,500.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>55,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,500.0055,500.00</td>
+                                        <td>55,500.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-title clearfix">
+                            <div class="ebankc-titlecenter">金融负债2</div>
+                        </div>
+                        <div class="ebankc-table-content ebankc-table-content-x ">
+                            <table class="ebankc-tablereportforms">
+                                <thead>
+                                    <tr>         
+                                        <th rowspan="2">账号</th>
+                                        <th rowspan="2">户名</th>
+                                        <th rowspan="2">账户简称</th>
+                                        <th rowspan="2">开户行</th>
+                                        <th rowspan="2">理财产品代码</th>
+                                        <th rowspan="2">理财产品名称</th>
+                                        <th rowspan="2">份额</th>
+                                        <th rowspan="2">期末净值</th>
+                                        <th rowspan="2">余额</th>
+                                        <th colspan="2">交易笔数</th>
+                                        <th colspan="2">交易金额</th>
+                                    </tr>
+                                    <tr>  
+                                        <th>购买申请笔数</th>
+                                        <th>赎回申请笔数</th>
+                                        <th>购买确认笔数</th>
+                                        <th>赎回确认笔数</th>
+                                    </tr>
+                                </thead>
+                                <tbody>        
+                                    <tr>
+                                        <td rowspan="2">9558880110410</td>
+                                        <td rowspan="2">XXXXXX</td>
+                                        <td rowspan="2">李四</td>
+                                        <td rowspan="2">XXXXXX</td>
+                                        <td rowspan="2">13775550085</td>
+                                        <td rowspan="2">XXXXXX</td>
+                                        <td rowspan="2">55,333500.00</td>
+                                        <td rowspan="2">55,500.00</td>  
+                                        <td rowspan="2">55,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,3333500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,500.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>55,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,500.0055,500.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-title clearfix">
+                            <div class="ebankc-titlecenter">金融负债3</div>
+                        </div>
+                        <div class="ebankc-table-content ebankc-table-content-x ">
+                            <table class="ebankc-tablereportforms">
+                                <thead>
+                                    <tr>         
+                                        <th rowspan="2">账号</th>
+                                        <th rowspan="2">户名</th>
+                                        <th rowspan="2">账户简称</th>
+                                        <th rowspan="2">开户行</th>
+                                        <th rowspan="2">理财产品代码</th>
+                                        <th rowspan="2">理财产品名称</th>
+                                        <th rowspan="2">份额</th>
+                                        <th rowspan="2">期末净值</th>
+                                        <th rowspan="2">余额</th>
+                                        <th colspan="3">交易笔数</th>
+                                        <th colspan="3">交易金额</th>
+                                    </tr>
+                                    <tr>  
+                                        <th>购买申请笔数</th>
+                                        <th>赎回申请笔数</th>
+                                        <th>购买确认笔数</th>
+                                        <th>赎回确认笔数</th>
+                                        <th>购买确认笔数</th>
+                                        <th>赎回确认笔数</th>
+                                    </tr>
+                                </thead>
+                                <tbody>        
+                                    <tr>
+                                        <td rowspan="2">9558880110410</td>
+                                        <td rowspan="2">XXXXXX</td>
+                                        <td rowspan="2">李四</td>
+                                        <td rowspan="2">XXXXXX</td>
+                                        <td rowspan="2">13775550085</td>
+                                        <td rowspan="2">XXXXXX</td>
+                                        <td rowspan="2">55,333500.00</td>
+                                        <td rowspan="2">55,500.00</td>  
+                                        <td rowspan="2">55,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,3333500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,500.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>55,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,500.0055,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,500.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-title clearfix">
+                            <div class="ebankc-titlecenter">金融负债4</div>
+                        </div>
+                        <div class="ebankc-table-content ebankc-table-content-x ">
+                            <table class="ebankc-tablereportforms">
+                                <thead>
+                                    <tr>         
+                                        <th rowspan="4">账号</th>
+                                        <th rowspan="4">户名</th>
+                                        <th rowspan="4">账户简称</th>
+                                        <th rowspan="4">开户行</th>
+                                        <th rowspan="4">理财产品代码</th>
+                                        <th rowspan="4">理财产品名称</th>
+                                        <th rowspan="4">份额</th>
+                                        <th rowspan="4">期末净值</th>
+                                        <th rowspan="4">余额</th>
+                                        <th colspan="2">交易笔数</th>
+                                        <th colspan="2">交易金额</th>
+                                    </tr>
+                                    <tr>  
+                                        <th>购买申请笔数</th>
+                                        <th>赎回申请笔数</th>
+                                        <th>购买确认笔数</th>
+                                        <th>赎回确认笔数</th>
+                                    </tr>
+                                    <tr>  
+                                        <th>购买申请笔数</th>
+                                        <th>赎回申请笔数</th>
+                                        <th>购买确认笔数</th>
+                                        <th>赎回确认笔数</th>
+                                    </tr>
+                                    <tr>  
+                                        <th>购买申请笔数</th>
+                                        <th>赎回申请笔数</th>
+                                        <th>购买确认笔数</th>
+                                        <th>赎回确认笔数</th>
+                                    </tr>
+                                </thead>
+                                <tbody>        
+                                    <tr>
+                                        <td rowspan="3">9558880110410</td>
+                                        <td rowspan="3">XXXXXX</td>
+                                        <td rowspan="3">李四</td>
+                                        <td rowspan="3">XXXXXX</td>
+                                        <td rowspan="3">13775550085</td>
+                                        <td rowspan="3">XXXXXX</td>
+                                        <td rowspan="3">55,333500.00</td>
+                                        <td rowspan="3">55,500.00</td>  
+                                        <td rowspan="3">55,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,3333500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,500.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>55,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,500.0055,500.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>55,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,500.00</td>
+                                        <td>55,500.0055,500.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>          
+            </div>
+            <div class="ebankc-mc-part">
+                <!--选择分类弹窗类-->
+                <div class="ebankc-setclass-box">
+                    <p>
+                        <span class="ebankc-inputcheckbox"><input type="checkbox" name="yongtu1" value="1" class="ebankc-checkboxclass"/></span><a href="" class="ebankc-btmborder">用途1</a>
+                    </p>
+                    <div class="ebankc-setclass">
+                        <dl>
+                            <dt>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" indeterminate=ture name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><a href="" class="ebankc-btmborder">分类1</a>
+                            </dt>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei1" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                        </dl>
+                        <dl class=" ebankc-nobtm">
+                            <dt>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><a href="" class="ebankc-btmborder">分类2</a>
+                            </dt>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                            <dd>
+                                <span class="ebankc-inputcheckbox"><input type="checkbox" name="fenlei2" value="1" class="ebankc-checkboxclass"/></span><span>1234567890123456789</span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <p>
+                        <span class="ebankc-inputcheckbox"><input type="checkbox" name="yongtu2" value="1" class="ebankc-checkboxclass"/></span><a href="" class="ebankc-btmborder">用途2</a>
+                    </p>
+                    <p>
+                        <span class="ebankc-inputcheckbox"><input type="checkbox" name="yongtu3" value="1" class="ebankc-checkboxclass"/></span><a href="" class="ebankc-btmborder">用途3</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="ebankc-main-end ">
+            1.撒三分靠模仿南卡麦克风你看那付款男放开那非翻看
+            <br> 2.撒门口那客服，啊买空卖空反复麻烦
+        </div>
+        <div class="ebankc-main-copyright">版权信息</div>
+    </div>
+    <script src="../depends/jquery-1.6.2.min.js"></script>
+    <script src="../js/ebankc-page.js"></script>
+    <script type="text/javascript" src="../js/ebankc-classfunction.js"></script>
+    <script>
+        page("#page1 ", 1, 26);
+        page("#page2 ", 1, 5);
+        page("#page4 ", 1, 20);
+        page("#page3 ", 1, 4);
+
+
+        // 根据tbody内容长度，动态增加垂直滚动条
+        var ifaddtablescrolly =function(boxid,boxh){
+            // console.log(boxh);
+            var ths = jQuery(boxid).prev(".ebankc-table-divyscrolltop").find('th');
+            var firsttrtds = jQuery(boxid).find("tr:eq(0) td");
+            var trh = jQuery(boxid).find("tr:eq(0) td:eq(0)").height()+4;
+            var tdlenarray =[];
+            firsttrtds.each(function(index){
+                tdlenarray[index]=jQuery(this).width();
+            });
+            // console.log(trh);
+            ths.each(function(index){
+                var len = tdlenarray[index];
+                jQuery(this).width(len);
+
+                // console.log(jQuery(this).width());
+            });
+            var theight = jQuery(boxid).children('table').height();
+            var boxidheight = boxh*trh+(boxh-1);
+            // console.log(theight +"   "+ boxidheight);
+            if(theight>boxidheight){
+                jQuery(boxid).height(boxidheight);
+                jQuery(boxid).css('border-bottom',"1px solid #dcdcdc");
+                jQuery(boxid).prev(".ebankc-table-divyscrolltop").css("padding-right","15px");
+                jQuery(boxid).addClass('ebankc-table-content-y');
+                
+                // jQuery(boxid).find('tbody').css('width',"102%");
+            }else{
+                jQuery(boxid).height(theight);
+            };
+        };
+        ifaddtablescrolly("#addcontentbox",4);
+
+        jQuery("#addbtn").bind('click',function(){
+            jQuery("#addcontentbox").children('table').append("<tr><td>1111111</td><td>1111111</td><td>1111111</td><td>12344</td><td>12344</td><td>12344</td><td>12344</td><td>12344</td><td>12344</td></tr>");
+            ifaddtablescrolly("#addcontentbox",4);
+        });
+
+
+     </script>
+</body>
+
+</html>

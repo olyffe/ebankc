@@ -1,0 +1,937 @@
+@charset "UTF-8";
+/*可点击链接*/
+a.ebankc-bombBox:link,a.ebankc-bombBox:visited,a.ebankc-bombBox:hover,a.ebankc-bombBox:active {
+	font-size: 14px;
+	*line-height:18px;
+	font-weight: normal;
+	color: #003098;
+	height:auto;
+	margin-right: 10px;
+}
+a.ebankc-jump:link,a.ebankc-jump:visited,a.ebankc-jump:hover,a.ebankc-jump:active {
+	font-size: 14px;
+	*line-height:18px;
+	font-weight: normal;
+	color: #003098;
+	margin-right: 10px;
+}
+a.ebankc-refresh:link,a.ebankc-refresh:visited,a.ebankc-refresh:hover,a.ebankc-refresh:active {
+	font-weight: normal;
+	*line-height:18px;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #333333;
+	text-decoration:underline;
+}
+a.ebankc-btmborder:link,a.ebankc-btmborder:visited,a.ebankc-btmborder:hover,a.ebankc-btmborder:active {
+	font-weight: normal;
+	font-size: 14px;
+	*line-height:18px;
+	color: #333333;
+	text-decoration:underline;
+	vertical-align:middle;
+}
+a.ebankc-default:link,a.ebankc-default:visited,a.ebankc-default:hover,a.ebankc-default:active {
+	font-size: 12px;
+	_font-size:14px;
+	*line-height:18px;
+	font-weight: normal;
+	color:#000000;
+	/*color: #003098;*/
+	margin-right: 20px;
+	vertical-align:middle;
+}
+a.ebankc-marginright0 {
+	margin-right: 0;
+}
+/*a.ebankc-tabeldownsend {
+	position: relative;
+	top:-8px;
+	*top:-13px;
+}*/
+/*选中变红*/
+a.ebankc-active {
+	color: #b80020 !important;
+}
+/*浏览文件*/
+a.ebankc-inputfile {
+    display: inline-block;
+    *display: inline;
+	*zoom: 1;
+	width:80px !important;
+	height:30px;
+	line-height:30px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+/*收起展开小三角*/
+a.ebankc-collect {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 62px;
+	height:14px;
+	background: url(img/zhedie1.png) center bottom no-repeat;
+}
+a.ebankc-spread {
+	background: url(img/zhedie2.png) center bottom no-repeat;
+}
+/*加号*/
+a.ebankc-add {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 12px;
+	height:12px;
+	background: url(img/add.png) center center no-repeat;
+	margin-right: 8px;
+}
+/*减号*/
+a.ebankc-reduce {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 12px;
+	height:12px;
+	background: url(img/reduce.png) center center no-repeat;
+	margin-right: 8px;
+}
+/*叉叉*/
+/*a.ebankc-del {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 12px;
+	height:12px;
+	background: url(img/cha.png) center center no-repeat;
+	margin-right: 14px;
+	margin-top: 14px;
+	/*position: absolute;
+	top:0;
+	right:0;*/
+/*}*/
+/*弹窗关闭x*/
+a.ebankc-close {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 14px;
+	height:14px;
+	background: url(img/close.png) center center no-repeat;
+	margin-right: 8px;
+}
+/*成功*/
+a.ebankc-success {
+	background: url(img/success.png) center center no-repeat;
+}
+/*失败*/
+a.ebankc-fail {
+	background: url(img/fail.png) center center no-repeat;
+}
+/*可疑*/
+a.ebankc-doubtable {
+	background: url(img/doubtable.png) center center no-repeat;
+}
+/*左箭头*/
+a.ebankc-left {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width:30px;
+	height:50px;
+	background: #ffffff url(img/left.png) center center no-repeat;
+	position: absolute;
+	z-index: 1;
+	left:0;
+	top:0;
+	border-right: 1px solid #c8c8c8\9;
+	box-shadow: 2px 0 10px rgba(0,0,0,.2);
+}
+/*右箭头*/
+a.ebankc-right {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width:30px;
+	height:50px;
+	background: #ffffff url(img/right.png) center center no-repeat;
+	position: absolute;
+	z-index: 1;
+	right:0;
+	top:0;
+	border-left: 1px solid #c8c8c8\9;
+	box-shadow: -2px 0 10px rgba(0,0,0,.2);
+}
+/*下拉框中的上下移箭头*/
+i.ebankc-up {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 10px;
+	height:26px;
+	margin-right: 20px;
+	background: url(img/shangyi.png) center center no-repeat;
+}
+i.ebankc-down {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 10px;
+	height:26px;
+	margin-right: 40px;
+	background: url(img/xiayi.png) center center no-repeat;
+}
+/*下载图标*/
+i {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align:middle;
+	width:16px;
+	height:16px;
+	background: url(img/xiazai.png) center center no-repeat;
+}
+/*感叹号图标*/
+u {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width:24px;
+	height:30px;
+	line-height:30px;
+	background: url(img/gantan.png) center center no-repeat;
+	/*position:absolute;*/
+	vertical-align:middle;
+}
+/*"单位名称"等行标题*/
+label {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	font-size:14px;
+	width:120px;
+	line-height:18px;
+	vertical-align:middle;
+	color: #333333;
+	margin-right: 6px;
+	margin-bottom: 0;
+	text-align: right;
+}
+label.ebankc-labelonline {
+	width:auto;
+}
+
+/*"单位名称"等行标题中的‘*’符号*/
+label s {
+	color: #b80020;
+}
+/*无label 复选框span （发送短信）*/
+.ebankc-nolabel {
+	margin-left:0;
+	_float:right;
+}
+/*兼容ie placeholder*/
+.ebankc-phcolor {
+	color:#c2c2c2 !important;
+	font-size: 14px !important;
+	font-family: "Microsoft Yahei","微软雅黑","SimSun", "宋体","Helvetica","Arial" !important;
+}
+
+/*一行一个文本框*/
+.ebankc-inputtext {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width:338px;
+	height:30px;
+	line-height: 30px;
+	border:1px solid #E7E7E7;
+	border-radius: 2px;
+	padding:0 10px;
+	margin-bottom: 0;
+	margin-right: 10px;
+	font-size: 14px;
+	color: #333333;
+	box-shadow: none;
+}
+.ebankc-inputtext::-webkit-input-placeholder {
+	color:#c2c2c2;
+}
+.ebankc-inputtext:-moz-placeholder {
+	color:#c2c2c2;
+}
+.ebankc-inputtext::-moz-placeholder {
+	color:#c2c2c2;
+}
+.ebankc-inputtext:-ms-input-placeholder {
+	color:#c2c2c2;
+}
+/*一行多个文本框*/
+.ebankc-midtext {
+	width: 218px;
+}
+.ebankc-smalltext {
+	width: 88px;
+}
+/*复选框带图片切换*/
+.ebankc-inputcheckbox {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align:middle;
+	width: 16px;
+	height: 16px;
+	padding:1px;
+	cursor: pointer;
+	text-align:center;
+	margin-right: 10px !important;
+	overflow: hidden;
+	background: url(img/checkno.png) center top no-repeat;
+}
+.ebankc-inputcheckbox .ebankc-checkboxclass{
+	width: 13px;
+	height: 13px;
+	margin:0;
+	padding:0;
+	border:0;
+	vertical-align:top;
+	opacity: 0;
+	cursor: pointer;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+
+}
+.ebankc-inputcheckboxon {
+	background: url(img/checkyes.png) center top no-repeat;
+}
+.ebankc-checkboxchildnoton {
+	background: url(img/checkchildnoton.png) center top no-repeat;
+}
+.ebankc-checkboxdisabled {
+	background: url(img/checkdisno.png) center top no-repeat;
+}
+.ebankc-checkboxdisabledon {
+	background: url(img/checkdisyes.png) center top no-repeat;
+}
+
+/*单选框带图片切换*/
+.ebankc-inputradio {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align:middle;
+	width: 16px;
+	height: 16px;
+	padding:1px;
+	cursor: pointer;
+	text-align:center;
+	margin-right: 10px !important;
+	overflow: hidden;
+	background: url(img/radiono.png) center top no-repeat;
+
+}
+.ebankc-inputradio .ebankc-radioclass{
+	width: 13px;
+	height: 13px;
+	margin:0;
+	padding:0;
+	border:0;
+	vertical-align:top;
+	opacity: 0;
+	cursor: pointer;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	
+}
+.ebankc-inputradioon {
+	background: url(img/radioyes.png) center top no-repeat;
+}
+.ebankc-radiodisabled {
+	background: url(img/radiodisno.png) center top no-repeat;
+}
+.ebankc-radiodisabledon {
+	background: url(img/radiodisyes.png) center top no-repeat;
+}
+	
+/*日期时间组件*/
+.ebankc-timecomponent {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+/*日期选择*/
+.ebankc-timecomponent input.laydate-icon {
+	width:108px;
+	height:30px;
+	vertical-align:middle;
+	margin-right: 10px;
+	padding:0 10px;
+	border:1px solid #E7E7E7;
+	border-radius: 2px;
+	font-size: 14px;
+	color: #333333;
+	background:#ffffff url(img/rili.png) 100px 5px no-repeat;
+}
+/*弹出框  带下载的日期*/
+.ebankc-timecomponent-downloadBox {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width:280px;
+	height:100px;
+	background-color: #fff;
+	box-shadow: 2px 3px 10px rgba(0,0,0,.2),-2px 2px 5px rgba(0,0,0,.2);
+	position: relative;
+}
+.ebankc-timecomponent-downloadBox a.ebankc-close {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 14px;
+	height:14px;
+	margin-right: 10px;
+	position:absolute;
+	top:10px;
+	right:0;
+}
+.ebankc-timecomponent-download {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width:179px;	
+	height:36px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-left: -90px;
+	margin-top: -18px;
+}
+.ebankc-timecomponent-download input.laydate-icon {
+	width:107px;
+	height:34px;
+	line-height: 34px;
+	padding:0 10px;
+	border:1px solid #E7E7E7;
+	border-right: none;
+	border-radius: 2px 0 0 2px;
+	font-size: 14px;
+	color: #333333;
+	position: absolute;
+	left:0;
+	background:#ffffff url(img/rili.png) 100px 7px no-repeat;
+}
+.ebankc-timecomponent-download .ebankc-timecomponent-downloadbtn {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	position: absolute;
+	right: 0;
+	width: 50px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	padding:0;
+	background-color: #b80020;
+	border-radius: 0 2px 2px 0;
+	font-size: 16px;
+	font-family: "Microsoft Yahei","微软雅黑","SimSun", "宋体","Helvetica","Arial";
+	color: #ffffff;
+}
+
+/*普通按钮*/
+.ebankc-commonbtn {
+	height: 30px;
+	line-height:30px;
+	text-align: center;
+	margin:0 10px;
+	padding:0;
+	background: #b80020;
+	border-radius: 2px;
+	font-size: 14px;
+	font-family: "Microsoft Yahei","微软雅黑","SimSun", "宋体","Helvetica","Arial";
+	color: #ffffff;
+	vertical-align:middle;
+}
+
+/*弱按钮*/
+.ebankc-weakbtn {
+	height: 30px;
+	line-height:30px;
+	text-align: center;
+	margin:0 10px;
+	padding:0;
+	background: #d8d8d8;
+	border-radius: 2px;
+	font-size: 14px;
+	font-family: "Microsoft Yahei","微软雅黑","SimSun", "宋体","Helvetica","Arial";
+	color: #333333;
+	vertical-align:middle;
+}
+/*宽80按钮*/
+.ebankc-width80btn {
+	width:80px !important;
+}
+
+/*提醒气泡*/
+.ebankc-tipbubbles {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	position: relative;
+}
+.ebankc-tipbubbles .ebankc-remindbubbles {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	padding:10px 10px 25px 10px;
+	margin-bottom: 10px;
+	border-radius: 2px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #666666;
+	background-color: #fffbc6;
+	box-shadow: 2px 3px 10px rgba(0,0,0,.2),-2px 2px 5px rgba(0,0,0,.2);
+	position: absolute;
+	bottom:15px;
+	left:-55px; 
+	z-index: 1000;
+	display: none;
+}
+.ebankc-tipbubbles .ebankc-remindbubbles p {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+.ebankc-tipbubbles .ebankc-remindbubbles span {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width:0;
+    height:0;
+    border:8px solid transparent;
+    border-top-color:#fffbc6;
+    _width:15px;
+    _height:8px;
+    _border:none;
+    _background:url(img/yellow.png) center center no-repeat;
+    position: absolute;
+	bottom:-16px;
+	_bottom:-12px;
+	left:60px;
+}
+.ebankc-tipbubbles .ebankc-remindbubbles a {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	font-size: 12px;
+	position: absolute;
+	bottom:10px;
+	right:10px;
+}
+/*下拉框*/
+.ebankc-selectdrop {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align:middle;
+	margin-right: 10px;
+	z-index: 99;
+	position:relative;
+}
+.ebankc-selectdrop .ebankc-inputselect{
+	width:338px;
+	height:30px;
+	line-height:30px;
+	border:1px solid #E7E7E7;
+	border-radius: 2px;
+	padding:0 10px;
+	font-size: 14px;
+	color: #333333;
+	background:#fff url(img/zhanshou1.png) center right no-repeat;
+}
+.ebankc-selectdrop .zhanshou2 {
+	background:#fff url(img/zhanshou2.png) center right no-repeat;
+}
+.ebankc-inputselect::-webkit-input-placeholder {
+	color:#c2c2c2;
+}
+.ebankc-inputselect:-moz-placeholder {
+	color:#c2c2c2;
+}
+.ebankc-inputselect::-moz-placeholder {
+	color:#c2c2c2;
+}
+.ebankc-inputselect:-ms-input-placeholder {
+	color:#c2c2c2;
+}
+/*一行多个下拉框*/
+.ebankc-selectdrop .ebankc-inputselectmore {
+	width:218px;
+	/*width:0;*/
+}
+/*省市下拉框*/
+.ebankc-selectdrop .ebankc-provincescitys {
+	width:153px;
+}
+/*无三角下拉框*/
+.ebankc-selectdrop .ebankc-inputselect-notriangle {
+	background:#fff !important;
+}
+/*小时分钟下拉框*/
+.ebankc-selectdrop .ebankc-time {
+	width:38px;
+	padding:0 10px;
+}
+.ebankc-selectdrop div {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	height:164px;
+	box-shadow: 2px 3px 10px rgba(0,0,0,.2),-2px 2px 10px rgba(0,0,0,.2);
+	border: 1px solid #E7E7E7;
+	*border-top: none;
+	overflow: auto;
+	position:absolute;
+	top:32px;
+	*top:33px;
+	left:0;
+	background-color: #fff;
+	z-index: 99;
+	width:100%;
+	*width:360px;
+	display: none;
+}
+.ebankc-selectdrop div.ebankc-notriangle {
+	position:absolute;
+	top:32px;
+	*top:33px;
+	left:0;
+	display: none;
+}
+.ebankc-selectdrop div.ebankc-online {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	*width:280px;
+	display: none;
+}
+.ebankc-selectdrop div.ebankc-online-provincescitys {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	*width:170px;
+	display: none;
+}
+.ebankc-selectdrop div.ebankc-online-time {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	*width:60px;
+	display: none;
+}
+.ebankc-selectdrop div p {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	height:26px;
+	line-height: 26px;
+	padding:0 10px 0 10px;
+	color:#c2c2c2;	
+	font-size: 16px;
+	display: none;
+}
+.ebankc-selectdrop div li {
+	height:26px;
+	line-height: 26px;
+	padding:0 10px 0 10px;	
+}
+.ebankc-selectdrop div li a {
+	float:left;
+	font-size: 14px;
+	color: #333333;
+	cursor: default;
+}
+
+.ebankc-selectdrop div li span {
+	float:right;
+	font-size: 14px;
+	font-weight: normal;
+	color: #3a84cf;
+	cursor: pointer;
+	margin-right: 10px;
+	display: none;
+}
+.ebankc-selectdrop div li i.ebankc-down,
+.ebankc-selectdrop div li i.ebankc-up {
+	float:right;
+	display: none;
+	cursor: pointer;
+}
+.ebankc-selectdrop div.ebankc-online a {
+	margin-right: 30px;
+}
+.ebankc-selectdrop div.ebankc-online span {
+	margin:0 10px 0 0;
+}
+
+.ebankc-selectdrop div.ebankc-online-time li {
+	padding:0 0 0 10px;
+}
+.ebankc-selectdrop div.ebankc-online-time a {
+	margin:0;
+}
+/*带下拉框按钮*/
+.ebankc-selectbtn {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+/*是否按钮*/
+.ebankc-yesornobtn {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	height: 22px;
+	border:1px solid #b80020;
+	border-radius: 2px;
+	margin-right: 10px;
+	vertical-align:middle;
+}
+.ebankc-yesornobtn button {
+	height:22px;
+	line-height:22px;
+	font-size: 14px;
+	font-family: "Microsoft Yahei","微软雅黑","SimSun", "宋体","Helvetica","Arial";
+	width:45px;
+	text-align: center;
+	padding:0;
+	background-color: #f0f0f0;
+	color: #b80020;
+	border: none;
+}
+/*是否按钮不可用*/
+.ebankc-yesornobtndisabled {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	height: 22px;
+	border:1px solid #CBCBCB;
+	border-radius: 2px;
+	margin-right: 10px;
+	vertical-align:middle;
+}
+.ebankc-yesornobtndisabled button {
+	height:22px;
+	line-height:22px;
+	font-size: 14px;
+	font-family: "Microsoft Yahei","微软雅黑","SimSun", "宋体","Helvetica","Arial";
+	width:45px;
+	text-align: center;
+	padding:0;
+	color: #CBCBCB;
+	background-color: #f0f0f0;
+	border: none;
+}
+.ebankc-yesornobtndisabled button.ebankc-lastbtn {	
+	background-color: #CBCBCB;
+	color: #fff;	
+}
+/*切换按钮*/
+.ebankc-changebtns {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	height: 28px;
+	border:1px solid #b80020;
+	border-radius: 2px;
+	margin-right: 10px;
+	vertical-align:middle;
+}
+.ebankc-changebtns button {
+	height:28px;
+	line-height:28px;
+	font-size: 14px;
+	font-family: "Microsoft Yahei","微软雅黑","SimSun", "宋体","Helvetica","Arial";
+	padding:0 15px;
+	color: #b80020;
+	background-color: #f0f0f0;
+	border: none;
+	overflow: visible;
+}
+button.ebankc-btnactive {
+	color: #fff;
+	background-color:#b80020; 
+}
+
+/*验证码*/
+.ebankc-identifyimg {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	border:1px solid #ffffff;
+}
+
+/*原生下拉框select*/
+
+
+/*表格弹窗部分组件样式*/
+/*文本对齐方式*/
+
+.ebankc-text-right {
+    text-align: right!important;
+}
+
+.ebankc-text-center {
+    text-align: center!important;
+}
+
+.ebankc-text-left {
+    text-align: left!important;
+}
+
+/*添加 .ebankc-nobtm 使其取消底部边框*/
+
+.ebankc-main .ebankc-mc-part .ebankc-nobtm td,
+.ebankc-nobtm {
+    border-bottom: 0!important;
+}
+
+/*强制垂直居中 */
+.ebankc-verticalcenter {
+	vertical-align:middle;
+}
+
+
+/*新功能介绍*/
+/*遮罩*/
+.ebankc-shade{
+	height:100%; 
+	width:100%; 
+	position:fixed;
+	_position:absolute; 
+	top:0; 
+	left:0;
+	z-index:2000;  
+	/*display:none; */
+} 
+.ebankc-shade-opacity{ 
+	opacity:0.3; 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30); 
+	background-color:#000; 
+} 
+/*功能展示区*/
+.ebankc-newpresent{
+	width:788px; 
+	height:468px;  
+	/*background:transparent url(img/new1.png) center center no-repeat;*/
+	position:absolute; 
+	top:50%; 
+	left:50%; 
+	margin:-234px auto auto -394px; 
+	z-index:2001; 
+	border-radius: 10px;
+	box-shadow: 3px 3px 15px #333; 
+	/*display:none; */
+}
+.ebankc-newpresentcontent {
+	position:relative;
+	width:100%;
+	height:100%;
+	border-radius: 10px;
+	/*background:url(img/new1.png) center center no-repeat;*/
+}
+/*图片切换部分*/
+.ebankc-newpresentchangeimg {
+	width:100%;
+	height:427px;
+	overflow:hidden;
+}
+.ebankc-newpresentchangeimg ul {
+	width:100%;
+	height:427px;
+	overflow:hidden;
+	border-radius: 10px;
+}
+.ebankc-newpresentchangeimg ul li {
+	width:100%;
+	height:427px;
+	overflow:hidden;
+	display: none;
+}
+.ebankc-newpresentchangeimg ul li.ebankc-imgshow {
+	display: block;
+}
+/*点击控制部分*/
+.ebankc-newpresentchange {
+	height:41px;
+	margin:0 80px;
+	text-align: center;
+}
+.ebankc-newpresentchange ul {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	height:31px;
+	margin:0 16px;
+}
+.ebankc-newpresentchange ul li {
+	width:8px;
+	height:31px;
+	margin:0 4px;
+	background:url(img/presentdiangray.png) center center no-repeat;
+	float:left;
+}
+.ebankc-newpresentchange ul li.ebankc-dotcurrent {
+	background:url(img/presentdianred.png) center center no-repeat;
+}
+.ebankc-newpresentchange .ebankc-newpresentpre {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width:83px;
+	height:31px;
+	background: url(img/prepage.png) center center no-repeat;
+}
+.ebankc-newpresentchange .ebankc-newpresentstart {
+	background: url(img/prepagegray.png) center center no-repeat;
+}
+.ebankc-newpresentchange .ebankc-newpresentnext {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width:83px;
+	height:31px;
+	background: url(img/nextpage.png) center center no-repeat;
+}
+.ebankc-newpresentchange .ebankc-newpresentend {
+	background: url(img/lijitiyan.png) center center no-repeat;
+}
+/*功能弹框关闭按钮*/
+.ebankc-newpresentclose {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width:31px;
+	height:31px;
+	background:url(img/presentclose.png) center center no-repeat;
+	position:absolute;
+	top:10px;
+	right:10px;
+	cursor: pointer;
+}
+/*功能展示更多链接*/
+.ebankc-newpresentmore {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width:71px;
+	height:14px;
+	background:url(img/liaojiemore.png) center center no-repeat;
+	position:absolute;
+	bottom:20px;
+	right:20px;
+	display: none;
+	cursor: pointer;
+}
